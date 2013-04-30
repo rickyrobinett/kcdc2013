@@ -143,17 +143,12 @@
     _move : function (direction) {
       var delay = this.settings.delay;
       var anchor = this.anchor(direction);
-      if ($(anchor).attr('href') && direction > 0) {
-        window.open($(anchor).attr('href'));
+      if (!$(anchor).length) {
+        this.create();
       }
-      else {
-        if (!$(anchor).length) {
-          this.create();
-        }
-        setTimeout(function () {
-          $('html, body').scrollTo( $(anchor), delay); 
-        },   delay);
-      }
+      setTimeout(function () {
+        $('html, body').scrollTo( $(anchor), delay); 
+      },   delay);
       location.hash = anchor;
     }
   };
