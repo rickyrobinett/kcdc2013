@@ -59,7 +59,7 @@ KIRKSTOKC='                        V       <a href="#kc" id="kirks_to_kc">KANSAS
 LAWTOKC='    <a href="#kc" id="law_to_kc">KANSAS CITY, KS</a> 40mi --\&gt;                                                               '
 LAWTOMANHAT='                                                                \&lt;--- <a href="#manhat" id="law_to_manhat">MANHATTAN, KS</a> 84mi    '
  
-MANHATTOLAW='    <a href="#kc" id="manhat_to_law">LAWRENCE, KS</a> 84mi --\&gt;                                                                  '
+MANHATTOLAW='    <a href="#law" id="manhat_to_law">LAWRENCE, KS</a> 84mi --\&gt;                                                                  '
 
 
 STLOUTOCOLUMBIA='                                                                  \&lt;-- <a href="#columbia" id="stlou_to_columbia">COLUMBIA, MO</a> 125mi   '

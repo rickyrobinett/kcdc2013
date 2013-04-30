@@ -15,7 +15,7 @@
       var delay = 1200;
       $("document").ready(function() {
         $("#corner_to_columbia").click(   function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        $("#corner_to_jeffc").click(   function (e) { e.preventDefault();scrollToRegion   ('jeffc',      delay);});
+        $("#corner_to_jeffc").click   (   function (e) { e.preventDefault();scrollToRegion('jeffc',      delay);});
         $("#corner_to_kc").click      (   function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
         $("#corner_to_kirks").click   (   function (e) { e.preventDefault();scrollToRegion('kirks',      delay);});
         $("#corner_to_law").click     (   function (e) { e.preventDefault();scrollToRegion('law',        delay);});
