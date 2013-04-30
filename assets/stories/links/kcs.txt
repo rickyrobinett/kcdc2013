@@ -1,6 +1,6 @@
 LINK_1 = http://en.wikipedia.org/wiki/Kansas_City_standard
 LINK_2 = http://brainwagon.org/2011/07/22/the-kansas-city-standard/
-LINK_3 = http://kccode.net/1/BYTE_audio-cassette-standards-symposium.pdf
+LINK_3 = http://www.swtpc.com/mholley/AC30/KansasCityStandard.htm
 LINK_4 = http://fileformats.archiveteam.org/wiki/Kansas_City_Standard_data_cassette
 LINK_5 = http://www.dabeaz.com/py-kcs/index.html
 LINK_6 = http://www.netbay.com.au/~dxforth/#kcs
@@ -12,5 +12,5 @@ LINK_11 = http://en.wikipedia.org/wiki/Talk:Kansas_City_standard
 LINK_12 = http://en.wikipedia.org/wiki/File:CT1024_Monitor.jpg
 LINK_13 = http://www.chrismcovell.com/TapeDump_Controls.html
 LINK_14 = https://github.com/windytan/ctape/
-LINK_15 = http://kccode.net:8080/1/kcs.mp4
-LINK_16 = http://kccode.net/1/BYTEsAudioCassetteStandardsSymposiumFebruary1976.wav
+LINK_15 = http://www.youtube.com/watch?v=wVwhHsyRKEg
+LINK_16 = http://www.youtube.com/watch?v=Tj3CwEk6TJY

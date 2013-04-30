@@ -3,10 +3,10 @@
   <head>
     <title>kccode.net</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <script type="text/javascript" src="/0/jquery-1.9.1-min.js"></script>
-    <script type="text/javascript" src="/0/jquery-scrollTo-patched.js"></script>
-    <script type="text/javascript" src="/0/js-url.min.js"></script>
-    <script type="text/javascript" src="/0/kcdc-scroller.js"></script>
+    <script type="text/javascript" src="/jquery-1.9.1-min.js"></script>
+    <script type="text/javascript" src="/jquery-scrollTo-patched.js"></script>
+    <script type="text/javascript" src="/js-url.min.js"></script>
+    <script type="text/javascript" src="/kcdc-scroller.js"></script>
     <script type="text/javascript">
       function scrollToRegion (regionId, delay, options) {
         $('html, body').scrollTo( $('#' + regionId), delay, options );
@@ -14,11 +14,6 @@
       }
       var delay = 1200;
       $("document").ready(function() {
-        if ($.url('?fs')) {
-          var fs = $.url('?fs');
-          var mainStyle = fs + 'px/' + fs + 'px monospace';
-          $('#main').css('font', mainStyle);
-        }
         $("#corner_to_columbia").click(   function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
         $("#corner_to_jeffc").click(   function (e) { e.preventDefault();scrollToRegion   ('jeffc',      delay);});
         $("#corner_to_kc").click      (   function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
@@ -42,30 +37,27 @@
         $("#law_to_kc").click(            function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
         $("#manhat_to_law").click(        function (e) { e.preventDefault();scrollToRegion('law',        delay);});
         $("#stlou_to_columbia").click(    function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-      });
-      if ($.url('?p') === 'kcdc2013') {
         var prefix, settings = {
           init: function () {}, 
           lastLoad: 29,
           fontSize: 36
         };
+        if ($.url('?fs')) {
+          var fs = $.url('?fs');
+          var mainStyle = fs + 'px/' + fs + 'px monospace';
+          $('#main').css('font', mainStyle);
+        }
         if ($.url('#')) {
           var re = /(\D*)(\d+)$/;  // non-numeric\bnumeric
           prefix = $.url('#').replace(re, "$1");
           var start  = $.url('#').replace(re, "$2");
           settings.idPrefix = prefix;
           settings.start = start;
+          scrollToRegion($.url('#'), delay); 
         }
-        $("document").ready(function() {
-
-          if ($.url('#')) { 
-            settings.lastLoad = $('.' + prefix).size();
-            scrollToRegion($.url('#'), delay); 
-          }
-          var scroller = $.kcdcScroller(settings);
-          scroller();
-        });
-      }
+        var scroller = $.kcdcScroller(settings);
+        scroller();
+      });
 
     </script>
     <style type="text/css">

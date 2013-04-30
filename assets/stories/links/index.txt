@@ -1,4 +1,0 @@
-LINK_1 = http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-LINK_2 = http://kccode.net/0/LINK_2.js
-LINK_3 = http://kccode.net/0/LINK_3.js
-LINK_4 = http://kccode.net/0/LINK_4.js

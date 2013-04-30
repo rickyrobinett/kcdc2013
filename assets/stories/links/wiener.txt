@@ -3,4 +3,4 @@ LINK_2 = http://infocom.cheonan.ac.kr/~nykwak/kuim/wiener.c
 LINK_3 = http://www.slideshare.net/AkshatRatanpal/wiener-filter
 LINK_4 = http://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.wiener.html
 LINK_5 = http://www.wavemetrics.com/products/igorpro/imageprocessing/imagetransforms/arithematic.htm
-LINK_6 = http://kccode.net:8080/6/wiener.mp4
+LINK_6 = http://www.youtube.com/watch?v=3cz6d97hyu4

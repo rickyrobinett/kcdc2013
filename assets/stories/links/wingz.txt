@@ -1,10 +1,10 @@
 LINK_1 = http://en.wikipedia.org/wiki/Informix_Wingz
-LINK_2 = http://kccode.net/2/LINK_2.pdf
+LINK_2 = http://archive.computerhistory.org/resources/text/Informix/informix.annual_report_1987.102653311.pdf
 LINK_3 = http://www.bizjournals.com/kansascity/stories/2007/05/21/story17.html?page=all
 LINK_4 = http://www.entrepreneurship.bloch.umkc.edu/outside_classroom/mike_brown.asp
 LINK_5 = http://archive.computerhistory.org/resources/access/text/Oral_History/102658001.05.01.acc.pdf#page=22
-LINK_6 = http://kccode.net:8080/2/LINK_6.mp4
-LINK_7 = http://kccode.net:8080/2/LINK_7.mp4
+LINK_6 = http://www.youtube.com/watch?v=w97SKl3778A
+LINK_7 = http://www.youtube.com/watch?v=w97SKl3778A
 LINK_8 = http://www.nytimes.com/1989/09/20/business/new-products-from-next-inc.html
 LINK_9 = http://www.sterlinghoffman.com/newsletter/articles/article188.html
 LINK_10 = http://www.bizjournals.com/kansascity/stories/2007/06/04/story13.html?s=print
@@ -16,4 +16,4 @@ LINK_15 = books.google.com/books?id=Az8EAAAAMBAJ&amp;lpg=PA39&amp;dq=%22Informix
 LINK_16 = http://www.asa3.org/chemistry/computers_in_chemistry/xyplotting.html
 LINK_17 = https://groups.google.com/group/comp.os.linux.announce/msg/60743d37687c9912?dmode=source&amp;output=gplain&amp;noredirect&amp;pli=1
 LINK_18 = http://www.cbronline.com/news/informix_and_innovative_explain_their_urge_to_merge_wall_street_permitting
-LINK_19 = http://kccode.net/2/LINK_19.pdf
+LINK_19 = http://www.file-extensions.org/imgs/app-picture/2531/wingz.gif
