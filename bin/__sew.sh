@@ -46,6 +46,8 @@ COLUMBIATOJEFFC='                         V   <a href="#jeffc" id="columbia_to_j
 COLUMBIATOKIRKS='                          ^   <a href="#kirks" id="columbia_to_kirks">KIRKSVILLE, MO</a> 91mi                                          '
 COLUMBIATOSTLOU='                         <a href="#stlouis" id="columbia_to_stlouis">ST. LOUIS, MO</a> 125mi --\&gt;                                           '
 
+GITHUBLINK='<a target="_blank" href="http://git.io/kcdc2013">git.io/kcdc2013</a>                                                                            '
+
 JEFFCTOCOLUMBIA='                        ^       <a href="#columbia" id="jeffc_to_columbia">COLUMBIA, MO</a> 32mi                                          '
 
 KCTOCOLUMBIA='              <a href="#columbia" id="kc_to_columbia">COLUMBIA, MO</a> 125mi --\&gt;                                                       '
@@ -103,7 +105,8 @@ sed ${TMP_DIR}_legend_2 -e "5s!${ROW}!${TOCOLUMBIA}!"           > ${TMP_DIR}_leg
 sed ${TMP_DIR}_legend_3 -e "6s!${ROW}!${TOJEFFC}!"              > ${TMP_DIR}_legend_4
 sed ${TMP_DIR}_legend_4 -e "7s!${ROW}!${TOSTLOUIS}!"            > ${TMP_DIR}_legend_5
 sed ${TMP_DIR}_legend_5 -e "8s!${ROW}!${TOLAWRENCE}!"           > ${TMP_DIR}_legend_6
-sed ${TMP_DIR}_legend_6 -e "9s!${ROW}!${TOMANHAT}!"             > ${TMP_DIR}_legend
+sed ${TMP_DIR}_legend_6 -e "9s!${ROW}!${TOMANHAT}!"             > ${TMP_DIR}_legend_7
+sed ${TMP_DIR}_legend_7 -e "12s!${ROW}!${GITHUBLINK}!"          > ${TMP_DIR}_legend
 
 echo "";echo -n "  > Creating columns..."
 
