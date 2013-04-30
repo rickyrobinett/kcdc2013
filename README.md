@@ -20,6 +20,7 @@ Then, on any/all:
     > cabal install wai-extra
     > cabal install warp
     > cabal install aeson
+    > cd kcdc2013/
     > git submodule init
     > git submodule update
     > cp kcdc2013.hs scotty
