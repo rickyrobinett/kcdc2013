@@ -6,13 +6,12 @@
     <script type="text/javascript" src="/jquery-1.9.1-min.js"></script>
     <script type="text/javascript" src="/jquery-scrollTo-patched.js"></script>
     <script type="text/javascript" src="/js-url.min.js"></script>
-    <script type="text/javascript" src="/kcdc-scroller.js"></script>
     <script type="text/javascript">
-      function scrollToRegion (regionId, delay, options) {
-        $('html, body').scrollTo( $('#' + regionId), delay, options );
-        location.hash = regionId;
-      }
-      var delay = 1200;
+      var delay = 1200,
+        scrollToRegion  = function (regionId, delay, options) {
+          $('html, body').scrollTo( $('#' + regionId), delay, options );
+          location.hash = regionId;
+        };
       $("document").ready(function() {
         $("#corner_to_columbia").click(   function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
         $("#corner_to_jeffc").click   (   function (e) { e.preventDefault();scrollToRegion('jeffc',      delay);});
@@ -37,11 +36,6 @@
         $("#law_to_kc").click(            function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
         $("#manhat_to_law").click(        function (e) { e.preventDefault();scrollToRegion('law',        delay);});
         $("#stlou_to_columbia").click(    function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        var prefix, settings = {
-          init: function () {}, 
-          lastLoad: 29,
-          fontSize: 36
-        };
         if ($.url('?fs')) {
           var fs = $.url('?fs');
           var mainStyle = fs + 'px/' + fs + 'px monospace';
@@ -51,14 +45,9 @@
           var re = /(\D*)(\d+)$/;  // non-numeric\bnumeric
           prefix = $.url('#').replace(re, "$1");
           var start  = $.url('#').replace(re, "$2");
-          settings.idPrefix = prefix;
-          settings.start = start;
           scrollToRegion($.url('#'), delay); 
         }
-        var scroller = $.kcdcScroller(settings);
-        scroller();
       });
-
     </script>
     <style type="text/css">
       .hl  {background: #FFFBCC; color: #000000;}
