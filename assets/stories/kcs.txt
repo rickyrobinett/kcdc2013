@@ -1,0 +1,541 @@
+-<a class="kcs_" id="kcs_1"></a>----------------------------------------------------------------------------------------- 
+                                       <a class="kcs_" id="kcs_2" target="_blank" href="{{LINK_1}}">The Kansas City Standard</a>                            
+------------------------------------------------------------------------------------------ 
+                                                                                           
+/*                                                                                         
+                                                                                           
+              kc.c <a class="kcs_" id="kcs_3" target="_blank" href="{{LINK_2}}">http://brainwagon.org/2011/07/22/the-kansas-city-standard/</a>              
+                                                                                           
+              <a class="kcs_" id="kcs_4" target="_blank" href="{{LINK_11}}">Digital data format for audio cassette drives</a>. Byte magazine                 
+              sponsored a <a class="kcs_" id="kcs_5" target="_blank" href="{{LINK_3}}">symposium in November 1975 in Kansas City, MO</a> to                 
+              develop a standard for storage of digital microcomputer data on              
+              inexpensive consumer quality <a class="kcs_" id="kcs_6" target="_blank" href="{{LINK_4}}">cassettes</a>, at a time when floppy                
+              disk drives cost over <span class="hl">$1000 USD each ($3,978.29 in 2012 dollars)</span>.            
+                                                                                           
+              The two-day meeting was attended by 18 people who settled on a               
+              system based on <a class="kcs_" id="kcs_7" target="_blank" href="{{LINK_12}}">Don Lancaster's design</a>, published in Byte                    
+              magazine's first issue.                                                      
+                                                                                           
+                    ::::::::::::  @+++#++++#++++'''''''';;;;;:                             
+                    '##########;  ###+##+#++++#++++++#########:                            
+                   .@#########@;.`+####+#++#++++#+++++++++####@                            
+                   '##########+;.,#################+##########+`                           
+                 `'+####@#####''`+##############################                           
+                ,`;@##########;' @#####++##+#++##++++++##+######                           
+               ;  '''''';;';'';# ###########@@@@@@@@@@#+#+######.                          
+              :  ,;##########;;+`+#########+ ```````` .++++#####@                          
+             ,.  '+#####+###@+''+##########+ ` :.,., ` ++########                          
+             '  `'####@######'',@#@#########  ``````   @#########:                         
+             :  ''##';;;;#@#;;+`@..````````+..::,:,,:``@#+#######@                         
+             `;:;;;''+++++++';# @`@,:@@@,@`+@@;'+;'':##+##+######+`                        
+               ':;'##++++++@#;@ +`...`````.+######################+                        
+               ``.......,,:::'@.+''++'''''''################++#####                        
+              ``.#:@'@##@+@':':;@####++#####################+####++.                       
+              `.'@+@#@@#@+#':'+@''+''+''++###@@@@+@@@@@@@@@@@@@+@@@@                       
+              ...:,':';''''';',:,,,,,,,,,',,,,,,,...,,,,,,,....,...,                       
+              `.,..,,,,,:::::'.,,,,,,'::,,,,,,,,'.,,.,,:,,:..,,,....                       
+              ..+'''''+''''''@`;,,,,::::,+,,;...,...,,.,.......;...                        
+              ,          ```` `@,,,::,;:,',,:.,,'.,.:..'..:,..;....                        
+              ,               ` ,,,,,,:,,+,,:,,.,.,,,,.,,...,,`...,                        
+              ,               :          ,``````````````````......                         
+                    `````....,:          :                                                 
+                              ,         `.                                                 
+                              `         ,`                                                 
+                               :        ,`                                                 
+                                .      `:                                                  
+                                 ;    `,                                                   
+                                  `:;,                                                     
+                                                                                           
+<a class="kcs_" id="kcs_8"></a>              The SWTPC AC-30 Cassette Interface implemented the <a class="kcs_" id="kcs_9" target="_blank" href="{{LINK_13}}">KCS</a>                       
+              standard. It sold for <span class="hl">$80 in May 1976 ($318.26 in 2012 dollars)</span>.             
+*/                                                                                         
+                                                                                           
+                                                                                           
+#include &lt;stdio.h&gt;                                                                         
+#include &lt;stdlib.h&gt;                                                                        
+#include &lt;math.h&gt;                                                                          
+<span class="hl">#include "/usr/local/include/sndfile.h";</span>                                                   
+                                                                                           
+/*                                                                                         
+ * kc.c                                                                                    
+ * A <a class="kcs_" id="kcs_10" target="_blank" href="{{LINK_15}}">program</a> which takes a file as input, and encodes it via the old                       
+ * Kansas City Standard - a <span class="hl">300 baud</span> format that was used by old                           
+ * microcomputers to store data onto cassette tape.                                        
+ *                                                                                         
+ * http://en.wikipedia.org/wiki/Kansas_City_standard                                       
+ *                                                                                         
+ * We are going to produce a <span class="hl">9600 sample per second</span> output file...                         
+ *                                                                                         
+ * <span class="hl">Each "baud" is 32 samples long</span>.                                                         
+ *                                                                                         
+ * A '0' is 4 cycles @ 1200 Hz.                                                            
+ * A '1' is 8 cycles @ 2400 Hz.                                                            
+ *                                                                                         
+ * 0 -  0 R2 1 R2 0 -R2 -1 -R2                                                             
+ * 1 -  0 1 0 -1                                                                           
+ *                                                                                         
+ */                                                                                        
+                                                                                           
+<a class="kcs_" id="kcs_11"></a>#define R2      (.70710678118654752440f)                                                   
+                                                                                           
+SNDFILE *sf ;                                                                              
+SF_INFO sfinfo ;                                                                           
+                                                                                           
+void                                                                                       
+output(float f)                                                                            
+{                                                                                          
+    sf_write_float(sf, &amp;f, 1) ;                                                            
+}                                                                                          
+                                                                                           
+void                                                                                       
+send(int bit)                                                                              
+{                                                                                          
+    int c ;                                                                                
+                                                                                           
+    switch (bit) {                                                                         
+    case 0:                                                                                
+        for (c=0; c&lt;4; c++) {                                                              
+            output(0.f) ;                                                                  
+            output(R2) ;                                                                   
+            output(1.f) ;                                                                  
+            output(R2) ;                                                                   
+            output(0.f) ;                                                                  
+            output(-R2) ;                                                                  
+            output(-1.f) ;                                                                 
+            output(-R2) ;                                                                  
+        }                                                                                  
+        break ;                                                                            
+    case 1:                                                                                
+        for (c=0; c&lt;8; c++) {                                                              
+            output(0.f) ;                                                                  
+            output(1.f) ;                                                                  
+            output(0.f) ;                                                                  
+            output(-1.f) ;                                                                 
+        }                                                                                  
+        break ;                                                                            
+    default:                                                                               
+        abort() ;                                                                          
+    }                                                                                      
+}                                                                                          
+                                                                                           
+                                                                                           
+void                                                                                       
+encode(int ch)                                                                             
+{                                                                                          
+    int i ;                                                                                
+    send(0) ;           /* start bit... */                                                 
+    for (i=0; i&lt;8; i++) {                                                                  
+        send(ch &amp; 1) ;                                                                     
+        ch = ch &gt;&gt; 1 ;                                                                     
+    }                                                                                      
+    send(1) ;           /* two stop bits */                                                
+    send(1) ;                                                                              
+}                                                                                          
+                                                                                           
+main()                                                                                     
+{                                                                                          
+    int i, ch ;                                                                            
+                                                                                           
+    <span class="hl">sfinfo.channels = 1 ;</span>                                                                  
+    <span class="hl">sfinfo.samplerate = 9600 ;</span>                                                             
+<a class="kcs_" id="kcs_12"></a>    <span class="hl">sfinfo.format = SF_FORMAT_WAV | SF_FORMAT_PCM_16 ;</span>                                     
+                                                                                           
+    <span class="hl">sf = sf_open("test.wav", SFM_WRITE, &amp;sfinfo) ;</span>                                         
+                                                                                           
+    <span class="hl">for (i=0; i&lt;9600/4; i++)</span>                                                               
+        <span class="hl">output(0.) ;</span>                                                                       
+    <span class="hl">while ((ch = getchar()) != EOF)</span>                                                        
+        <span class="hl">encode(ch) ;</span>                                                                       
+    <span class="hl">for (i=0; i&lt;9600/4; i++)</span>                                                               
+        <span class="hl">output(0.) ;</span>                                                                       
+                                                                                           
+    <span class="hl">sf_close(sf) ;</span>                                                                         
+}                                                                                          
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                   README.txt <a class="kcs_" id="kcs_13" target="_blank" href="{{LINK_5}}">http://www.dabeaz.com/py-kcs/index.html</a>                      
+------------------------------------------------------------------------------------------ 
+                                                                                           
+py-kcs - Encode/Decode Kansas City Standard Audio Cassette Data                            
+                                                                                           
+Author: David Beazley (http://www.dabeaz.com)                                              
+Copyright (C) 2010                                                                         
+                                                                                           
+This is free software. You are free to use it however you wish, but if you                 
+decide to include it in some other package, please give me some credit.                    
+                                                                                           
+Overview                                                                                   
+--------                                                                                   
+This package provides a pair of scripts, kcs_encode.py and kcs_decode.py                   
+that encode and decode WAV audio files containing data encoded in the                      
+Kansas City Standard as used on some of the first home computers.  In my                   
+case, an Ohio Scientific Superboard II from 1978...                                        
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                 kcs_encode.py http://www.dabeaz.com/py-kcs/index.html                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+#!/usr/bin/env python3                                                                     
+# kcs_encode.py                                                                            
+#                                                                                          
+# Author : David Beazley (http://www.dabeaz.com)                                           
+# Copyright (C) 2010                                                                       
+#                                                                                          
+# Requires Python 3.1.2 or newer                                                           
+                                                                                           
+"""                                                                                        
+Takes the contents of a text file and encodes it into a Kansas                             
+City Standard WAV file, that when played will upload data via the                          
+cassette tape input on various vintage home computers. See                                 
+http://en.wikipedia.org/wiki/Kansas_City_standard                                          
+"""                                                                                        
+                                                                                           
+<span class="hl">import wave</span>                                                                                
+                                                                                           
+# A few global parameters related to the encoding                                          
+                                                                                           
+FRAMERATE = 9600       # Hz                                                                
+ONES_FREQ = 2400       # Hz (per KCS)                                                      
+ZERO_FREQ = 1200       # Hz (per KCS)                                                      
+AMPLITUDE = 128        # Amplitude of generated square waves                               
+CENTER    = 128        # Center point of generated waves                                   
+                                                                                           
+# Create a single square wave cycle of a given frequency                                   
+def make_square_wave(freq,framerate):                                                      
+    n = int(framerate/freq/2)                                                              
+    return bytearray([CENTER-AMPLITUDE//2])*n + \                                          
+           bytearray([CENTER+AMPLITUDE//2])*n                                              
+                                                                                           
+                                  [...]                                                    
+                                                                                           
+                                                                                           
+if __name__ == '__main__':                                                                 
+    import sys                                                                             
+    if len(sys.argv) != 3:                                                                 
+        print("Usage : %s infile outfile" % sys.argv[0],file=sys.stderr)                   
+        raise SystemExit(1)                                                                
+                                                                                           
+    in_filename = sys.argv[1]                                                              
+    out_filename = sys.argv[2]                                                             
+    data = open(in_filename,"U").read()                                                    
+    data = data.replace('\n','\r\n')         # Fix line endings                            
+    rawdata = bytearray(data.encode('latin-1'))                                            
+    kcs_write_wav(out_filename,rawdata,5,5)                                                
+                                                                                           
+     :#@@@@@###+++++++++'''+++##@@@@@@######@########@#########                            
+     '@@@@@@@@@@@##@@@@@@@#@@@@##@@@@@#@@@@@@@@@@@@@@@@#@@@@@@#                            
+     +@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,                           
+     +@@@@@@@@@@@@@@@@@@@##########@@@@#@@@@@@@@@@@@@@@@@@@@@@@;                           
+     #@@@@@@@@@@@@#@#++#################@@@@@@@@@@@@@@@@@@@@@@@'                           
+     #@@@@@@@@@#@++++++####################@@@@@@@@@@@@@@@@@@@@#                           
+     #@@@@@@@#@+++++++@##############@#######@@@@@@@@@@@@@@@@@@#                           
+     #@@@@@@@++++++#++#+################@######@@@@@@@@@@@@@@@@@                           
+    `#@@@@@+++++#+++++++###################@#####@@@@@@@@@@@@@@@                           
+    `@@@@@++++#+++++++++#####################@####@@@@@@@@@@@@@@                           
+    .@@@@++++#++++++++++##@@@@@@@@@################@@@@@@@@@@@@@                           
+    ,@@##++@+++++++++#@@@@@@@@@@@@@@@@@#########@####@@@@@@@@@@#                           
+    '@@##+@++++++++@@@@@@@@@@@@@@@@@@@@@@########@###@@@@@@@@@@@`                          
+    +@###@#++++++#@@@@@@@@@@@@@@@@@@@@@@@@@#######@###@@@@@@@@@@,                          
+    ####@#####++@@@@#@@@@@@++'''+@@@@@@@@@@@@######@###@@@@@@@@@;                          
+    ###@#######@@@@#@@@+''''+###+'''+@@@@@@@@@######@##@@@@@@@@@+                          
+    @#########@@@@@@@'''@@@@@@@@@@@@'''@@@@@@@@##@##@@@@@@@@@@@@#                          
+    @#@#####@@@@@@@@''@@@@@@@@@@@@@@@#+'#@@@@@@@#@#@@@@@@@@@@@@@@                          
+    #@#@####@@@@@@';@@@@@@++'''+##@@@@@@;;#@@@@@@@@@@@@@@@@@@@@@@                          
+    #@@@###@@@@@@;:#@@@@@@@@@@+#@@@@@@@@#::#@@@@@@@@@@@@@@@@@@@#@                          
+<a class="kcs_" id="kcs_14"></a>   .@@@@@@@@@@@@':#@@@@@@@@@'+++@@@@@@@@@@:;@@@@@@@@@@@@@@@@@@@@#  A Floppy-ROM            
+   .@@@@@@@@@@@@'#@@@@@@@@@@@@@@@@@#@@+@@@#;@@@@@@@@@@@@@@@@@@@@#  Evatone sound sheet     
+   ;@@@@@@@@@@#;@@@@@#::'+;;:'';:';';;@@@@@@'#@@@@@@@@@@@@@@@@@##` in May 1977's           
+   +@@@@@@@@@@@;#@@@@@@@@#@@++#'#++@##@@@@@@;'@@@@@@@@@@@@@@@@@@#. Interface Age magazine. 
+   +@@@@@@@@@@'+@@@@@@@@@@@@#@##@##@@@@@@@@@@'#@@@@@@@@@@@@@@@@@@;                         
+   #@@@@@@@@@#'@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#;@@@@@@@@@@@@@@@@@@@'    The <span class="hl">6 minutes of</span>     
+   @@@@@@@@@@@+@@@@@@@@@@@@@@#@#@@@#'@@'@@@@@;+@@@@@@@@@@@@@@@@@@#::  <span class="hl">audio held Robert</span>    
+   @@@@@@@@@@@'@@@@#'''+@@@@#.`'@@@++#+#+@@@@+;@@@@@@@@@@@@@@@@@#@;:  <span class="hl">Uiterwyk's 4K BASIC</span>  
+   @@@@@@@@@@@'@@@@#;';';#@@@```#@@+';;''@@@@#;@@@@@@@@@@@@@@@@@@@::  <span class="hl">in the Kansas City</span>   
+   #@@@@@@@@@@+@@@@@++++'@@@@@'@#@@@''#@@@@@@+;@@@@@@@@@@@@@@@@@@@::   <span class="hl">Standard format.</span>    
+   #@@@@@@@@@#'@@@@@@@@@@@@@@@@@@@@@@##@@@@@@''@@@@@@@@@@@@@@@@@@#::                       
+   #@@@@@@@@@@''@@@@@@@@@@@@@@@@@@@@@@@@@@@@#:#@@@@@@@@@@@@@@@@@@#:,    The program was    
+  `#@@@@@@@@@@@'#@+@@@@@';;;@'';@@;+:#@@@#@@@'@@@@@@@@@#@@@@@@@@##:     for a 6800         
+  ,#@@@@@@@@@@@;+@#;@@@@::::';;:;;:+:#@@@'@@+:@@@@@@@@@@@@@@@@@@@#,     microprocessor     
+  ;@@@@@@@@@@@@@'@@@#@@@###@+'+''@#@@@@@'@@#;@@@@@@##@#@@@@@@@@@@#.     system such as     
+  +#@@@@@@@@@@@@+:#@@#@@@@'#@+++@@+@@@@+@@@;:@@@@@@######@@@@@@@@@:     the SWTPC 6 800.   
+  #@@@@@@@@@@@@@@;:@@@'@@@@@@@##@@@@@@#@@@@;#@@@@@######@##@@@@@@@+                        
+  @@@@@@@@@@@@@@@#;:+@@##@@@@@#@@@@@@@@@@@'@@#@@@@#########@@@@@###                        
+  @#@@@@@@@@@@@@@@#;;+@@@@'#@#'+@@++@@@#';@@#@@@@######@###@@#@@@##                        
+  @@@@@@@@@@@@@@@@@@@''#@#@@#+#+#@#@@+#::#@#@@@@+++#######@@@@@###@                        
+  #@@@@@#@@###@@@@@@@#'''@+:::;;::';#;;@#@#@@#@++++++#####@@@@@@@##                        
+  #@@##@@@#####@@@@@@@@@+;'+#+''+';';@#@#@@@@@+++++++@###@@@@@@@###                        
+ `#@@##@@#######@@@@@@##@#@@@@@@@@@#@@#@@@#@@+++++++#+++#@@@@#@@#@#                        
+ .##@@###@########@@@@@@@@@@@@@@@@@#@@@@@#@@++++++++++++@@@@@@#####                        
+ :#@@#@###@#########@#@@@@@@@@@@@@@@@@@#@@+++++++++++++@@@@@@@#####                        
+ '##@@@@##############@@@@@@@@@@@@@@#@@@++++++++++++++@@#@@@@@#####.                       
+ +##@@@@@################@@@@@@@@@@@@###++++++++#++++#@#@@@@@@#####,                       
+ ###@@@@@@####@#########################+++++++#++++@@#@@@@@@@#####'                       
+ @##@@@@@@@#############################+++++#+++++@@#@@@@#@@@#####+                       
+ @#@@@@@@@@@############################+++#++++++@@#@@@@@@#@#@#####                       
+ ##@@@@@@@@@@@######@####################@++++++@@#@@@@@@@@@@@#####@                       
+ ##@@@@@@@@@#@@@#######@@################+++++##@#@@@@@@@@@@#@#@####                       
+ ##@@@@@@@@@@@@@@#######################++++#@@#@@@@@###@@@#########                       
+`##@@@@@@@@@@@@@@@@@######################@@@#@@@@#@@@@#############                       
+,##@@@@@@@@@@@@@@@#@@@@@###############@@@######@##@#@@#############                       
+;##@#@@@@@@@#@@@@@@@@@@@@@@@@@@##@####@@############################`                      
++##@@#@@@@@@#@@@@@#@@@@@@@@@@#########@#############################,                      
+###@#@@###@@##@@#@#@@@@@@@@@########################################:                      
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                 kcs_decode.py http://www.dabeaz.com/py-kcs/index.html                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+#!/usr/bin/env python3                                                                     
+# kcs_decode.py                                                                            
+#                                                                                          
+# Author : David Beazley (http://www.dabeaz.com)                                           
+# Copyright (C) 2010                                                                       
+#                                                                                          
+# Requires Python 3.1.2 or newer                                                           
+                                                                                           
+"""                                                                                        
+Converts a WAV file containing Kansas City Standard data and                               
+extracts text data from it. See:                                                           
+                                                                                           
+http://en.wikipedia.org/wiki/Kansas_City_standard                                          
+"""                                                                                        
+                                                                                           
+from collections import deque                                                              
+from itertools import islice                                                               
+                                                                                           
+# Generate a sequence representing sign bits                                               
+def generate_wav_sign_change_bits(wavefile):                                               
+    samplewidth = wavefile.getsampwidth()                                                  
+    nchannels = wavefile.getnchannels()                                                    
+    previous = 0                                                                           
+    while True:                                                                            
+        frames = wavefile.readframes(8192)                                                 
+        if not frames:                                                                     
+            break                                                                          
+                                                                                           
+        # Extract most significant bytes from left-most audio channel                      
+        msbytes = bytearray(frames[samplewidth-1::samplewidth*nchannels])                  
+                                                                                           
+        # Emit a stream of sign-change bits                                                
+        for byte in msbytes:                                                               
+            signbit = byte &amp; 0x80                                                          
+            yield 1 if (signbit ^ previous) else 0                                         
+            previous = signbit                                                             
+                                                                                           
+# Base frequency (representing a 1)                                                        
+BASE_FREQ = 2400                                                                           
+                                                                                           
+# Generate a sequence of data bytes by sampling the stream of sign change bits             
+def generate_bytes(bitstream,framerate):                                                   
+    bitmasks = [0x1,0x2,0x4,0x8,0x10,0x20,0x40,0x80]                                       
+                                                                                           
+    <span class="hl"># Compute the number of audio frames used to encode a single data bit</span>                  
+    <span class="hl">frames_per_bit = int(round(float(framerate)*8/BASE_FREQ))</span>                              
+                                                                                           
+    # Queue of sampled sign bits                                                           
+    sample = deque(maxlen=frames_per_bit)                                                  
+                                                                                           
+    # Fill the sample buffer with an initial set of data                                   
+    sample.extend(islice(bitstream,frames_per_bit-1))                                      
+    sign_changes = sum(sample)                                                             
+                                                                                           
+    # Look for the start bit                                                               
+    for val in bitstream:                                                                  
+        if val:                                                                            
+            sign_changes += 1                                                              
+        if sample.popleft():                                                               
+            sign_changes -= 1                                                              
+        sample.append(val)                                                                 
+                                                                                           
+        # If a start bit detected, sample the next 8 data bits                             
+        if sign_changes &lt;= 9:                                                              
+            byteval = 0                                                                    
+            for mask in bitmasks:                                                          
+                if sum(islice(bitstream,frames_per_bit)) &gt;= 12:                            
+                    byteval |= mask                                                        
+            yield byteval                                                                  
+            # Skip the final two stop bits and refill the sample buffer                    
+            sample.extend(islice(bitstream,2*frames_per_bit,3*frames_per_bit-1))           
+            sign_changes = sum(sample)                                                     
+                                                                                           
+if __name__ == '__main__':                                                                 
+    <span class="hl">import wave</span>                                                                            
+    import sys                                                                             
+    import optparse                                                                        
+                                                                                           
+    p = optparse.OptionParser()                                                            
+    p.add_option("-b",action="store_true",dest="binary")                                   
+    p.add_option("--binary",action="store_true",dest="binary")                             
+    p.set_defaults(binary=False)                                                           
+                                                                                           
+    opts, args = p.parse_args()                                                            
+    if len(args) != 1:                                                                     
+        print("Usage: %s [-b] infile" % sys.argv[0],file=sys.stderr)                       
+        raise SystemExit(1)                                                                
+                                                                                           
+    wf = wave.open(args[0])                                                                
+    sign_changes = generate_wav_sign_change_bits(wf)                                       
+    <span class="hl">byte_stream  = generate_bytes(sign_changes, wf.getframerate())</span>                         
+                                                                                           
+    if opts.binary:                                                                        
+        # Output the byte stream in 80-byte chunks with NULL stripping                     
+                                                                                           
+                                  [...]                                                    
+                                                                                           
+-<a class="kcs_" id="kcs_15"></a>----------------------------------------------------------------------------------------- 
+                 KCS v0.8 <a class="kcs_" id="kcs_16" target="_blank" href="{{LINK_6}}">http://www.netbay.com.au/~dxforth/#kcs</a>                           
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         KCS v0.8 - Kansas City Standard and CUTS tape decoder/encoder                     
+         (2006-01-28)                                                                      
+                                                                                           
+         This is for all you old-timers that still have computer programs                  
+         on cassette!                                                                      
+                                                                                           
+         One of the most popular early ways to store computer programs on                  
+         audio cassettes was the Kansas City Standard (also known as the                   
+         'BYTE standard'). Developed in 1975, it uses an encoding scheme                   
+         where a '0' bit is represented as 4 cycles of 1200Hz and a '1'                    
+         bit as 8 cycles of 2400Hz. The data rate is 300 bits per second.                  
+         Computers which used the Kansas City Standard include S100-based                  
+         systems, PT SOL-20, Ohio Scientific C1P/Superboard II, Compukit                   
+         UK101, Acorn ATOM and many others.                                                
+                                                                                           
+         The KCS utility allows programs stored on cassette tape using                     
+         either the Kansas City Standard or CUTS (Processor Technology                     
+         Computer Users Tape Standard) to be decoded to a program file.                    
+                                                                                           
+                                  [...]                                                    
+                                                                                           
+         Download: <a target="_blank" href="{{LINK_7}}">kcs08.zip</a> (MS-DOS)                                                      
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                 SOLENT v0.2 <a class="kcs_" id="kcs_17" target="_blank" href="{{LINK_8}}">http://www.netbay.com.au/~dxforth/#solent</a>                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         SOLENT v0.2 - a conversion utility for KCS and SOL-20 users                       
+         (2003-10-13)                                                                      
+                                                                                           
+         SOLENT is a companion to KCS - a utility to decode/encode "Kansas City            
+         Standard" and Processor Technology "CUTS" cassette tapes.                         
+                                                                                           
+         Processor Technology's SOL-20 and CUTER-based systems store programs              
+         to tape in a special format. As KCS simply dumps all data found on a              
+         tape, a utility is required to convert KCS tape binary files into ENT             
+         format for use on a SOL-20 or the Solace emulator. SOLENT can also be             
+         used to create Processor Technology tapes from ENT files without                  
+         recourse to a real machine!                                                       
+                                                                                           
+         Download: <a target="_blank" href="{{LINK_9}}">solent02.zip</a> (MS-DOS)                                                   
+                                                                                           
+------------------------------------------------------------------------------------------ 
+<a class="kcs_" id="kcs_18"></a>                Encoding and decoding data in the Kansas City Standard on OSX              
+------------------------------------------------------------------------------------------ 
+                                                                                           
+          <span class="hl">$ brew install libsndfile</span>                                                        
+          <span class="hl">$ gcc kc.c -lsndfile -o kc</span>                                                       
+          <span class="hl">$ tail -19 BYTEsAudioCassetteStandardsSymposiumFebruary1976.txt</span>                  
+          Table I: Participants at Audio Cassette Symposium.                               
+                                                                                           
+          Ray Borrill, 1218 Prairie Dr, Bloomington IN                                     
+          Hal Chamberlin, The Computer Hobbyist, P 0 Box 5985, Raleigh NC 27607            
+          Tom Durston, MITS, 6328 [inn NE, Albuquerque NM                                  
+          Lee Felsenstein, LGC Engineering, 1807 Delaware St, Berkeley CA 94703            
+          Joe Frappier, Mikra-D, 32 Maple St, Bellingham MA                                
+          Bill Gates, MITS                                                                 
+          Gary Kay, Southwest Technical Products Corp, 219 VV Rhapsody, San                
+            Antonio TX 78216                                                               
+          Bob Marsh, Processor Technology, 2465 Fourth St, Berkeley CA 94710               
+          Harold A Mauch, Pronetics, 4021 Windsor, Garland TX 75042                        
+          Bob Nelson, PCM, San Ramon CA                                                    
+          George Perrine, HAL Communications Corp, Box 365, Urbana IL 61801                
+          Ed Roberts, MITS                                                                 
+          Richard Smith, The Computer Hobbyist, P 0 Box 5882, Raleigh NC 27607             
+          Les Solomon, Popular Electronics, 1 Park Av, New York NY 10016                   
+          Michael Stolowitz, Godbout Electronics, Box 2355, Oakland Airport CA             
+            94614                                                                          
+          Paul Tucker, HAL Communications Corp Mike Wise, Sphere, 791 S 500 W,             
+            Bountiful UT 84010                                                             
+          Bob Zeller, MITS                                                                 
+          <span class="hl">$ ./kc < BYTEsAudioCassetteStandardsSymposiumFebruary1976.txt</span>                    
+          <span class="hl">$ sndfile-info <a class="kcs_" id="kcs_19" target="_blank" href="{{LINK_16}}">test.wav</a></span>                                                          
+                                                                                           
+          Version : libsndfile-1.0.25                                                      
+                                                                                           
+          ========================================                                         
+          File : test.wav                                                                  
+          Length : 3994988                                                                 
+          RIFF : 3994980                                                                   
+          WAVE                                                                             
+          fmt  : 16                                                                        
+            Format        : 0x1 => WAVE_FORMAT_PCM                                         
+            Channels      : 1                                                              
+            Sample Rate   : 9600                                                           
+            Block Align   : 2                                                              
+            Bit Width     : 16                                                             
+            Bytes/sec     : 19200                                                          
+          data : 3994944                                                                   
+          End                                                                              
+                                                                                           
+          ----------------------------------------                                         
+          Sample Rate : 9600                                                               
+          Frames      : 1997472                                                            
+          Channels    : 1                                                                  
+          Format      : 0x00010002                                                         
+          Sections    : 1                                                                  
+          Seekable    : TRUE                                                               
+          Duration    : 00:03:28.070                                                       
+          Signal Max  : 32767 (-0.00 dB)                                                   
+                                                                                           
+          <span class="hl">$ ./<a class="kcs_" id="kcs_20" target="_blank" href="{{LINK_10}}">tape-read</a> test.wav</span>                                                           
+          Reading test.wav                                                                 
+          Frequency = 9600, Baud = 300, 1 bit = 32, FFT width = 32, FFT step = 3           
+          lo frequency = 4.000 (1.000 * s[4] + 0.000 * s[5])                               
+          hi frequency = 8.000 (1.000 * s[8] + 0.000 * s[9])                               
+          Read 1997471 of 1997472 samples                                                  
+          Step 665000 of 665814 points                                                     
+          Normalising Spectrum Analysis Points                                             
+          lo average = 156668136.51197                                                     
+          hi average = 162341434.541595                                                    
+          Skipping initial 793 points (2379 samples)                                       
+          Skipping final 793 points (2379 samples)                                         
+          lo average = 306516694.442 over 332398 points                                    
+          hi average = 315226981.291 over 331830 points                                    
+          lo average = 306516694.442 over 332398 points                                    
+          hi average = 315226981.291 over 331830 points                                    
+          lo average = 306516694.442 over 332398 points                                    
+          hi average = 315226981.291 over 331830 points                                    
+          lo average = 306516694.442 over 332398 points                                    
+          hi average = 315226981.291 over 331830 points                                    
+          lo average = 306516694.442 over 332398 points                                    
+          hi average = 315226981.291 over 331830 points                                    
+          p=124, last=5 variance=0.0142045454545455                                        
+          Writing 5661 bytes to file.                                                      
+                                                                                           
+          5661 bytes decoded.                                                              
+          maximum speed variance: 0.0142045454545455                                       
+          Writing file test-001.txt                                                        
+          <span class="hl">$ tail -19 test-001.txt</span>                                                          
+          Table I: Participants at Audio Cassette Symposium.                               
+                                                                                           
+          Ray Borrill, 1218 Prairie Dr, Bloomington IN                                     
+          Hal Chamberlin, The Computer Hobbyist, P 0 Box 5985, Raleigh NC 27607            
+          Tom Durston, MITS, 6328 [inn NE, Albuquerque NM                                  
+          Lee Felsenstein, LGC Engineering, 1807 Delaware St, Berkeley CA 94703            
+          Joe Frappier, Mikra-D, 32 Maple St, Bellingham MA                                
+          Bill Gates, MITS                                                                 
+          Gary Kay, Southwest Technical Products Corp, 219 VV Rhapsody, San                
+            Antonio TX 78216                                                               
+          Bob Marsh, Processor Technology, 2465 Fourth St, Berkeley CA 94710               
+          Harold A Mauch, Pronetics, 4021 Windsor, Garland TX 75042                        
+          Bob Nelson, PCM, San Ramon CA                                                    
+          George Perrine, HAL Communications Corp, Box 365, Urbana IL 61801                
+          Ed Roberts, MITS                                                                 
+          Richard Smith, The Computer Hobbyist, P 0 Box 5882, Raleigh NC 27607             
+          Les Solomon, Popular Electronics, 1 Park Av, New York NY 10016                   
+          Michael Stolowitz, Godbout Electronics, Box 2355, Oakland Airport CA             
+            94614                                                                          
+          Paul Tucker, HAL Communications Corp Mike Wise, Sphere, 791 S 500 W,             
+            Bountiful UT 84010                                                             
+          Bob Zeller, MITS                                                                 
+                                                                                           

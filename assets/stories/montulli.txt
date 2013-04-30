@@ -1,0 +1,541 @@
+-<a id="montulli_1"></a>----------------------------------------------------------------------------------------- 
+          "...<a href="http://www.w3.org/People/Raggett/book4/ch02.html">a real asset to the HTML working group and the HTML Editorial Board</a>"         
+------------------------------------------------------------------------------------------ 
+                                                                                           
+            <a href="http://en.wikipedia.org/wiki/Lou_Montulli">Lou Montulli</a> is a programmer who is well known for his work in producing       
+            web browsers. In 1991 and 1992 he co-authored a text web browser called        
+            Lynx with Michael Grobe and Charles Rezac while he was at the University       
+            of Kansas. This web browser was one of the first available and is still        
+            in use today.                                                                  
+                                                                                           
+                                 +@@@@@@@++++`                                             
+                              `'@@@#++'@@@++'#+##                                          
+                           ;@#@@@@@@@'+@+'@+#;+'''@'                                       
+                          ,@@@@@@@#@@'+#+''+##''@''++                                      
+                         '@@@@@@+@@#@;@'@;+@@#'+@'+####                                    
+                        .@@@@@@@@'@'#@;+'@+@@@@@@@+@'@#@.;                                 
+                      :+@@@@@@@@@@@#@''+';'''@'@'#+@#@@@@#                                 
+                      +#@@@'@@+@@@@@++##;#'++'+#@'@+@@@@@@'                                
+                    .+@@@@;+'@@@#@#;;@@#@+@@''@'#@++@@@@@@@+                               
+                   `+@@@'@@#@'@+;'''@;+++##@@#@@@@@+@@@@@@+#@                              
+                   @@@@@@#@@@#';+#+++'+@@@@@@@@@@@@@@@@@@@@#@+                             
+                  ,@@@@@#@@@@@@+#+'''+@@@@@@@@@#@@@@@@@@@@@'@+#,                           
+                 ,@@@@@#@@@#++@@@#@##';+##@@@@@@@@@@@@@@@@@#@+;#                           
+                 @+@@@@@@@@#+++@@#+@@@@@+#@@#@+@@@@@@@@@@@@@@+'#                           
+                :@+@#@+@@@@#@@@#@###@+@@@@@@@##@@@@@@@@@@@@@@+++,                          
+                #@@#@@@@@@+@#@#@@#@@##@@@#@@@@@@@@@@@@@@@@@@@#+'#                          
+                @@#@@@#@@@'@@@@@+@@@@@@@@@#@@@#+'##+#@@@@@@@@+##'                          
+               +@@##@@+@++'##+@##@@@++###@#+';;;;:;'++#+@@@@@@@+'                          
+               @@@@@@@++''+##++++++##+;;';:::::::;;;;'''+#@@@@+@+:                         
+              ;@@@'@#+++';'+'++''++;:;,,,,,:,:,:::;;;;;'++@@@@@@@+                         
+              ,@@@'@+''';;'+;+''+;;:,,,,,,,,,,,::::::;;;''#@@@@@++                         
+              '@@@#@+;';;;:';'';::,,,,,,,,,,,,,,::::::;;;'#@@@@###                         
+              .@@@@@';;;;::;;'::::,,,,,.,,,,,,,,,:::::;;;'#@@@@@@@;                        
+              +@@#@#+;:;::::;::::,,,,,,,,,,,,,,,,:::::;;;'@@@@@@##`                        
+              `@@@@@+;;;::::::,,,,,,,,,,,,,,,,,,,::::::;;'#@@@@++#,                        
+              +@@@@@+';;:::::::,,,,,,,,,,,,,,:,::::::::;;'#@@@@+##:                        
+              +#@@@@+';::::::::,,,,,,,,,,,,,,::::::::::;;'+@@@@#++;                        
+              `#@@@@+';:::::::::::,,,,,,,,,,,:,::::::::;;'+@@@@#'':                        
+              :#@@@@';;:::::::::::,,,,,,,,:,,,,::::::::;;'+@@@@@+;'                        
+              ;#@@@@+';:::::::::,,,,,,,,::,,,,:,::::::;;;;+@@@##'';                        
+              ;++##@#;;;::::::::,,,,,,,,,,,,,,,,:::::;;;;;+@@#++#+'                        
+               '++#@#';;;:::::::,:,,,,,,,,,,,,::::::;;;;;;'@@+++'''                        
+               ;'+@@@';;;';;;;::::::,,,,,,::::;;;;;;'';;;;'@@+''+''                        
+               ;;'@@+;;;+#@++'''+';::::::::;;;+#+###@@@''''+@#''';,                        
+               ;''@@';'#@@@#@@@@@@#'::::::#''#@@@@@@@@@@@'''@@;++;+                        
+               ''+@@;'@@#@@@@@@@@@#';::,::##@@@@@@@@@@@@@@''@@+@';.                        
+               '+#@+;+@@@+'++#++++++;;:,:;'+#+'+'';;;;'+#@#'+@@++;.                        
+              .'@+@';#+';::;;'#@+;''';:,:;;'''@'@@@@+;;'+#+''@+@+'                         
+               '##@''+';'+@@@+@+''''';:,:;;'';';#@+@+@@';''''@@@#;                         
+               '##@''';;@@'#@@@,:#:'';::;;;';+;::@@@;#@#;;;''@#@+@.                        
+              `+@@@'';;'@++++;;'';;;';:::';';:;;;;;''+;+';;';@@++':                        
+              .###@;;;;';:;::::;;;;'';:::;';;::;:::::;;;;;;;;@@#;;:                        
+              :'+@@';;;;;;;;;;;;;;;''::::;';;;:;;;;;;;:::;;;'#@+:;:                        
+              :;;+@';;;::;:::::::;;'';;::;'';;::::::::::::;;'+@;:;;                        
+              .;:;@';;;;::::::::;;;;';:::;'';;:::::::::;:;;;'+@':;:                        
+               ;;'@';;;::::::::::;';';::;;'';;:,,,,::::::;;''+@+;:,                        
+               ::'@';;;::::::::::;;;;;::;;''';::::::::::;;;''@'';:`                        
+               ::'@'';;;:::::::::;;;';:::;;';;::,::::::;;;;''@+;;:                         
+               .:;#'';;;;::::::::;;'';:::;;';;:::::::::;;;;''@+:;:                         
+               `:;#''';;;;:::::::;'';;:::;;''':::::::::;;;;''@++':                         
+                :+'+';;;:::::::::''';;:,::;''';:::::::::;;;'+@#';'                         
+                ;;+@';;;;::::::;;';';::,,:;;';;::::::::;;;''+#+:',                         
+                ;;'@+;;;;::::;;;;';'';;;:;'+'';::::::::;;'''#+;''                          
+                `''#';;;;;:;;:;;;'+@@#;;;;@@+#;:::;::;;;;;'+++;;:                          
+                 ;;++';;;;;;;;;;;;'+##@'++##+';;;:;;;;;;;''+++::;                          
+                 ;;;++';;;;;;;;;;;''+++@@@+++';;;;::;;;;;;'+++::.                          
+                  ;:++'';;;;;;';';'++'+##''''+;'';;;;;;;;''+++:;                           
+                   `#++''';;;;''''++'''+#';''+''';';;;;;;'''#.                             
+                     :++';';;'''''+''''+'+'''+'';'';;;;;''+''                              
+                     ,''''''''';'++'';'''+;;'''+''''''';''+''                              
+                     ''''''''''''+';;;;;;';;'''+++''''''''+'+                              
+                     :'+'''''++'+'''''''''''''+++#'''';;'+''+                              
+                     .+'''''''@##@@@#@#####@@@@@@'+''''''''''                              
+                     ,'''''+''''+#+@'+;;;'+++++';;;'';;+'+'++                              
+                      ''++''+''''++''''''''''';;'';;;;'+'''++                              
+                      +'+++''';;'''''';;;;;;;;;;';;;''++'++#'                              
+                      .''++'';';;';;;;;;'''';;'';;;'''+++''+'                              
+                       '''+++'';;''''''''''';';;;;'''+'++'@+;                              
+                        ''+++'+';;'''''''';';;';;''+'+'++##;;                              
+                        :''++'';;;;;''';''';;;;;''''++'+#@';'                              
+                         :'+++''';;;;'''';;;;;;;;''++'+###;;;                              
+                          +++#+'';;;;;;;;;;;;;;;;'++#'##@;;;;                              
+                          .+++++'';';;;::::;;;;;';++#+#@';;;;,                             
+                           ++++'''';;;;;::;;;;;;+'++@@@@;;:;;+,                            
+                           '@++'''';;;;;;;;;;;;';++@@@@;:;:;;@,#:                          
+                           ;+@#+';';;:;;'';:;;;;'+#@@@':::;;'+,@@:                         
+                           ;+#@#''';;:;;'';;;;''''@@@':::::;'',@@@                         
+                           ;'+@@#'+;;';;;;''''+++@@@+:::::;;':,@@@@                        
+                           ';;+@@@'+;+;;;;';''+@@@@#:::::::;',:@@@@@                       
+                           ';;'+#@@+'+'++''+#@@@@@#::::::::;','@@@@@+                      
+                           ';;;'+#@@@@+@+@@@@@@@@#;::::::::;;,@@@@@@@#                     
+                                                                                           
+                                                                                           
+            <a href="http://montulli.org">montulli.org</a>:                                                                  
+                                                                                           
+            "I'm largely to blame for several innovations on the web including,            
+             cookies, the blink tag, server push and client pull, HTTP proxying,           
+             proxy authentication, HTTP byte ranges, HTTPS over SSL, and                   
+             encouraging the implementation of animate GIFS into the browser.              
+                                                                                           
+             If you remember that very first HTML interface news reader from the           
+             pre Navigator 2.0 days, that was me.  Unfortunately very few other            
+             people believed in HTML as an interface back then, so it got                  
+             scrapped.  It's ironic how things have come full circle again."               
+                                                                                           
+-------------------------------------------------------------------------------------------
+             "<a href="http://whereismydiskspace.com/">Where is my disk space? - an HTML 5 based File system visualizer</a>"            
+-------------------------------------------------------------------------------------------
+                                                                                           
+           "This tool allows you to visualize the directories and space sed on             
+           your computer with the power of modern Web Browsers and HTML 5. You can         
+           use this to quickly find out which directories contain the most data.           
+                                                                                           
+           Note: This site requires a modern browser with SVG support and a fast           
+           JavaScript engine. FireFox 10+, Chrome 10+, etc...                              
+                                                                                           
+-------------------------------------------------------------------------------------------
+                             "<a href="https://groups.google.com/group/alt.gopher/msg/b551f9faff85324c?dmode=source&amp;output=gplain&amp;noredirect&amp;pli=1">Lynx as a gopher client?</a>"                                    
+-------------------------------------------------------------------------------------------
+                                                                                           
+Path: sparky!uunet!zaphod.mps.ohio-state.edu!moe.ksu.ksu.edu!kuhub.cc.ukans.edu!montulli   
+From: montu...@kuhub.cc.ukans.edu                                                          
+Newsgroups: alt.gopher                                                                     
+Subject: Lynx as a gopher client?                                                          
+Message-ID: <1992Dec22.151622.45860@kuhub.cc.ukans.edu>                                    
+Date: 22 Dec 92 15:16:22 CST                                                               
+Organization: University of Kansas Academic Computing Services                             
+Lines: 37                                                                                  
+                                                                                           
+I have written what turns out to be a pretty good implementation                           
+of a gopher client.  This was done more as a consequence than a                            
+goal, but has turned out well none the less.                                               
+                                                                                           
+What I am interested in knowing now is if it has any shortcomings,                         
+and whether it should be distributed as a Gopher client.                                   
+                                                                                           
+The software is called Lynx and was developed for use as CWIS software.                    
+                                                                                           
+Lynx currently supports:                                                                   
+	0 standard Gopher ascii files                                                      
+	1 gopher directory types                                                           
+	2 gopher CSO type                                                                  
+	4 Mac binhex types                                                                 
+	5 PC binary types                                                                  
+	7 Index type                                                                       
+	8 telnet type                                                                      
+	9 UNIX binary type                                                                 
+	g gif type                                                                         
+	I image type                                                                       
+                                                                                           
+Complete compatability with WWW is in the making.                                          
+                                                                                           
+Anonymous access to a client is at "KUfacts.cc.ukans.edu"                                  
+Look in the 'Internet Toolbox' for the gopher resources.                                   
+                                                                                           
+Anonymous ftp at KUHUB.CC.UKANS.EDU as lynx.tar-z                                          
+                                                                                           
+:lou                                                                                       
+--                                                                                         
+  **************************************************************************               
+  *            T H E  U N I V E R S I T Y  O F  K A N S A S                *               
+  *      Lou  MONTULLI @ UKANVAX.bitnet                 Nothing difficult, *               
+  *                      Kuhub.cc.ukans.edu                is ever easy!   *               
+  *  UNIX,               Aix550.cc.ukans.edu        ACS Computing Services *               
+  *   have more fun!     Ukanaix.cc.ukans.edu          Lawrence, KS 66044  *               
+  **************************************************************************               
+                                                                                           
+-------------------------------------------------------------------------------------------
+                                            <a href="http://lynx.isc.org/release/lynx2-8-7/WWW/Library/Implementation/HTNews.c">HTNews.c</a>                                       
+-------------------------------------------------------------------------------------------
+                                                                                           
+/*	Find Author's mail address                                                         
+ *	--------------------------                                                         
+ *                                                                                         
+ * On exit,                                                                                
+ *	Returns allocated string which cannot be freed by the                              
+ *	calling function, and is reallocated on subsequent calls                           
+ *	to this function.                                                                  
+ *                                                                                         
+ * For example, returns "montulli@spaced.out.galaxy.net" if given any of                   
+ *	" Lou Montulli &lt;montulli@spaced.out.galaxy.net&gt; "                                  
+ *  or	" montulli@spaced.out.galaxy.net ( Lou "The Stud" Montulli ) "                     
+ */                                                                                        
+static char *author_address(char *email)                                                   
+{                                                                                          
+    char *p, *at, *e;                                                                      
+                                                                                           
+    StrAllocCopy(address, email);                                                          
+    CTRACE((tfp, "Trying to find address in: %s\n", address));                             
+                                                                                           
+    if ((p = strrchr(address, '&lt;'))) {                                                     
+	if ((e = strrchr(p, '&gt;')) &amp;&amp; (at = strrchr(p, '@'))) {                             
+	    if (at &lt; e) {                                                                  
+		*e = '\0';	/* Remove &gt; */                                             
+		return HTStrip(p + 1);	/* Remove leading and trailing spaces */           
+	    }                                                                              
+	}                                                                                  
+    }                                                                                      
+                                                                                           
+    if ((p = strrchr(address, '(')) &amp;&amp;                                                     
+	(e = strrchr(address, ')')) &amp;&amp; (at = strchr(address, '@'))) {                      
+	if (e &gt; p &amp;&amp; at &lt; e) {                                                             
+	    *p = '\0';		/* Chop off everything after the ')'  */                   
+	    return HTStrip(address);	/* Remove leading and trailing spaces */           
+	}                                                                                  
+    }                                                                                      
+                                                                                           
+    if ((at = strrchr(address, '@')) &amp;&amp; at &gt; address) {                                    
+	p = (at - 1);                                                                      
+	e = (at + 1);                                                                      
+	while (p &gt; address &amp;&amp; !isspace(UCH(*p)))                                           
+	    p--;                                                                           
+	while (*e &amp;&amp; !isspace(UCH(*e)))                                                    
+	    e++;                                                                           
+	*e = 0;                                                                            
+	return HTStrip(p);                                                                 
+    }                                                                                      
+                                                                                           
+    /*                                                                                     
+     * Default to the first word.                                                          
+     */                                                                                    
+    p = address;                                                                           
+    while (isspace(UCH(*p)))                                                               
+	p++;			/* find first non-space */                                 
+    e = p;                                                                                 
+    while (!isspace(UCH(*e)) &amp;&amp; *e != '\0')                                                
+	e++;			/* find next space or end */                               
+    *e = '\0';			/* terminate space */                                      
+                                                                                           
+    return (p);                                                                            
+}                                                                                          
+                                                                                           
+-------------------------------------------------------------------------------------------
+                                           <a href="http://www.fdisk.com/doslynx/bobcat.htm">Bobcat</a>                                          
+-------------------------------------------------------------------------------------------
+                                                                                           
+           Bobcat, by definition, means a small Lynx. The name was picked to               
+           imply that it is a less mature sibling to the Lynx browser. Bobcat              
+           started life as Lynx2-4-2. The reason 2-4-2 was chosen is because               
+           starting at 2-5, many files in the Lynx distribution became too big             
+           to compile out of the package targeted towards a plain DOS version.             
+                                                                                           
+           There have been many changes since 2-4-2, however, it does support              
+           many things that DOSLYNX didn't. I have also made many modifications            
+           to Bobcat's original behavior to make it more functional.                       
+                                                                                           
+                                                                                           
+                                  :`                                                       
+                                  :.                                                       
+                                 ::;::::,:,,,,....````````                                 
+                                 ;:::,,,,,,,,,,..........`````                             
+                                 ,...``` ,,...````````      ``                             
+                                :,...```,,....``````` ````    .`                           
+                                 ,. ,..:::,,,,,,.....`,,...```                             
+                                     ::::::,,,,,,....``;,,,.``                             
+                                     ::,,,,,........````;:...``                            
+                                    :,.`` :.`        .,..`:,..``                           
+                                   ..``    ,`         ,.`    ..`                           
+                                 ,,.`       ,``        ..`     ,.``                        
+                                ;,.`         .`        ..``      `                         
+                              .:,`                     ,,`                                 
+                            `,,.`                     :.`                                  
+                                                                                           
+                                                                                           
+                                                                                           
+          @@@@@@@     .@@@@@@    @@@@@@    @@@@@@@@   @@@@@     @@@@@@    @@@@@@           
+          @@@@@@@      @@@@@@;   #@@@@+    @@@@@@@@.  @@@@@     '@@@@@`  '@@@@@.           
+          @@@@@@@      `#@@@@@  :@@@@#     @@@@@@@@@  @@@@@      @@@@@@  #@@@@@            
+          @@@@@@@       @@@@@#  @@@@@+     @@@@@@@@#  @@@@@      ,@@@@@,@@@@@#             
+          @@@@@@@        #@@@@' #@@@#      @@@@@@@@@: @@@@@       @@@@@@@@@@@;             
+          @@@@@@@        @@@@@@#@@@@@      @@@@@@@@@@ @@@@@       `@@@@@@@@@@              
+          @@@@@@@         #@@@@@@@@#       @@@@@@@@@# @@@@@        @@@@@@@@#`              
+          @@@@@@@         +@@@@@@@@@       @@@@@,@@@@+@@@@@         #@@@@@@@               
+          @@@@@@@          #@@@@@@#        @@@@@`@@@@@@@@@@         #@@@@@@#               
+          @@@@@@@          ;@@@@@@@        @@@@@.'@@@@@@@@@        @@@@@@@@@@              
+          @@@@@@@           @@@@@#         @@@@@. #@@@@@@@@       :@@@@@@@@@#              
+          @@@@@@@.....      @@@@@#         @@@@@. @@@@@@@@@       #@@@@@@@@@@@             
+          @@@@@@@@@@@@      @@@@@#         @@@@@. ,@@@@@@@@      @@@@@#`#@@@@@`            
+          @@@@@@@@@@@@      @@@@@#         @@@@@.  #@@@@@@@     `@@@@@@  #@@@@@            
+          @@@@@@@@@@@@      @@@@@#         @@@@@.  @@@@@@@@     @@@@@#   :@@@@@:           
+          @@@@@@@@@@@@      @@@@@#         @@@@@.  `@@@@@@@    '@@@@@.    @@@@@#           
+                                                                                           
+-------------------------------------------------------------------------------------------
+         <a href="http://webcache.googleusercontent.com/search?q=cache:u0AqOkVrNSEJ:leb.net/blinux/blynx/&amp;hl=en&amp;gl=us&amp;strip=1">BLYNX - Lynx Support Files Tailored for Blind and Visually Handicapped Users</a>      
+-------------------------------------------------------------------------------------------
+                                                                                           
+           Forcing Lynx to associate a number with each individual link will               
+           completely revolutionize the way you perceive the web. Linearly                 
+           listed links will no longer present a near-impassable sound barrier, and        
+           when you are listening to a news story or a hypertext book or manual            
+           which contains embedded links, you'll                                           
+                                                                                           
+                a) know that they exist,                                                   
+                b) know exactly where they are,                                            
+                c) be able to follow them and listen to the explanatory or                 
+                   complementary information they contain, and                             
+                d) return to the body of the document and resume reading where you         
+                   left off.                                                               
+                                                                                           
+                                          [...]                                            
+                                                                                           
+# Speech- and Braille Specific lynx.cfg file.                                              
+@                                                                                          
+# To use this lynx.cfg file, run Lynx with the -cfg=~/lynx.cfg command                     
+# 	line switch. You can also define an alias in your .profile or                      
+#	.login to automatically force Lynx use this configuration.                         
+#                                                                                          
+# This configuration is maintained by Gregory J. Rosmaita as part of the                   
+#	Blynx and Blinux projects.  Please address comments, suggestions,                  
+# 	and corrections to &lt;oedipus@leb.net&gt;                                               
+#                                                                                          
+# The default placement for this file is /usr/local/lib/lynx.cfg (Unix)                    
+#                                     or Lynx_Dir:lynx.cfg (VMS)                           
+#                                                                                          
+# Definition pairs are of the form  VARIABLE:DEFINITION                                    
+# NO spaces are allowed between the pair items.                                            
+# NOTES TO BLIND USERS follow the default description and setting                          
+#                                                                                          
+#  If you do not have access to /usr/local/bin you may change                              
+#  the default location of this file in the userdefs.h file and recompile,                 
+#  or specify it's location on the command line with the "-cfg"                            
+#  command line option.                                                                    
+#                                                                                          
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           
+                                                                                           

@@ -1,0 +1,14 @@
+LINK_1 = http://en.wikipedia.org/wiki/Gordon_Bell
+LINK_2 = http://en.wikipedia.org/wiki/Bell's_law_of_computer_classes
+LINK_3 = http://research.microsoft.com/en-us/projects/mylifebits/
+LINK_4 = http://www.ieee.org/documents/von_neumann_rl.pdf
+LINK_5 = http://kccode.net:8080/5/LINK_5.mp4
+LINK_6 = http://0xabad1dea.github.com/vaxhax-0xabad1dea.txt
+LINK_7 = http://svnweb.freebsd.org/csrg/old/games.vax/?sortdir=down
+LINK_8 = http://kuhl-us.com/gadgets/retrocomputing/vax-simh.html
+LINK_9 = http://kccode.net:8080/5/LINK_9.mp4
+LINK_10 = http://www.scientificamerican.com/article.cfm?id=a-digital-life
+LINK_11 = http://totalrecallbook.com
+LINK_12 = http://en.wikipedia.org/wiki/VAX
+LINK_13 = http://kccode.net:8080/5/LINK_13.mp4
+LINK_14 = http://webcache.googleusercontent.com/search?q=cache:kQcrxsz0U9IJ:www.designspark.com/blog/a-raspberry-pi-vax-cluster&amp;hl=en&amp;gl=us&amp;strip=1

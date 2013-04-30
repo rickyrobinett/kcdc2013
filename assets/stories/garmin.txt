@@ -1,0 +1,541 @@
+-<a id="garmin_1"></a>----------------------------------------------------------------------------------------- 
+                            "Garmin Embraces <a href="{{LINK_1}}">3rd Party Development</a>"                        
+------------------------------------------------------------------------------------------ 
+                                                                                           
+               From: Sam Wormley &lt;sworml...@mchsi.com&gt;                                     
+               User-Agent: Thunderbird 1.5.0.12 (X11/20070529)                             
+               Newsgroups: sci.geo.satellite-nav,alt.satellite.gps                         
+               Subject: Garmin Embraces Third-Party Development                            
+               Message-ID: &lt;%EZ7i.143091$_c5.116451@attbi_s22&gt;                             
+               Date: Fri, 01 Jun 2007 18:34:35 GMT                                         
+                                                                                           
+               Garmin Embraces Third-Party Development                                     
+               http://cp.gpsworld.com/gpscp/article/articleDetail.jsp?id=429931            
+                                                                                           
+               May 29, 2007                                                                
+               GPS World                                                                   
+                                                                                           
+               GPS technology giant <a href="{{LINK_11}}">Garmin</a> is opening its technology to third-party        
+               developers.                                                                 
+                                                                                           
+               Today the company took the wraps off the <a href="{{LINK_1}}">Garmin Developer Web site</a>          
+               for software developers and content providers who want to make their        
+               Web sites, applications and data content compatible with Garmin             
+               navigation systems. The Garmin Developer site provides both free and        
+               licensed <a href="{{LINK_12}}">Garmin</a> resources and a library of application programming          
+               interfaces (APIs), toolkits and Web services offering six core              
+               products: Garmin Communicator Plugin, MotionBasedWeb Services,              
+               Content Toolkit, Garmin PeerPoint Messaging System, Garmin LBS              
+               Toolkit and Fleet Management Interface.                                     
+                                                                                           
+                                                                                           
+                 '+';;::;;;;;;;;;;..........;;;;;;;;;;;;;;;::::::::::::::::;'+,            
+              `;':,,:.  `:::::::;           .;:::::::::::::::,,,,,,,,,,,.,,,,,;+:          
+             :',,,,:.     ,::::;,            ;::::::::::::::,,,,,,,,,,,,,,,,,,,,:'`        
+            :;,,,,:.      `::::;.            ,;::::::::::::::,,,,,,,,,,,,,,,,,,,,,'.       
+           ,:,,,,:.         :;:;`            .;:::::::::::::::::::::,,,,,,,,::::,,,'`      
+           ',,,,:.          `;;'`            .;:::::::::::::::::::::::,,,,,,,::::,,,'      
+          ',,,,:.             :+.            ,;:::::::::::::::::;';';::,,,,,,::::,,,:+     
+         `;,,,:.      .:      `':            ;;::;;;:::::::::::;';`,';;::,,,,,:::,,:,'.    
+         ',,,:.      `'':       ,           ,';:;:``,;:::::;;;;''````;';:::,,,:::::::;'    
+         ',,:.      `;;;',                 `';;;:    :;::::;;;;+,`````:';;:::,,:::::;'+    
+         ;::.      `;;:::':        `      .';;':     `;;;;;;;'+;```.```.'';;::::;;;'':;    
+         ::,      `;;::,:;;        ;:.``.:'';':      .;;;;;;;''```;#,```.;';;:::;'''.`;    
+        `;:      `;;:,,,::         :+++''';;':      `;;;;;;;'+.``.@#@'````,+';;;''.```;    
+        ,;:     `;;:,,,::           ;';;;;;;:      `:';;;;;;';```+###@+.```.'+'':`````'    
+        :;;,   `;;:,,,::             :';;;;:      `'';;;;;;''```'######@;````;:`````;#@    
+        :;;',`.;;:,,,::               :;;;:       ;';;;;;;'+.``.########@'````````,+@++    
+        :';;;;;::,,,:: `               :':      `'';;;;;;'+:``.#@##########,``` .###+`;    
+        :';;;;:::,:::`         `,       :      `;';;;;;;;''```,:,..``:#####@:``;####' ;    
+        :';;::::::::``` ` ``` `'+; ````  ```` `''';;;;;;'+.``.:.`     +######+####### :    
+        ;';;;::::::` `````````;''+: ``````````;';;;;;;;;+:```:.``  ``.###############.:    
+        ;';;;:::;:```````````';:;;';`````````'';;;;;;;;';```'#+,  .##################;:    
+        ;';;;;:;:```````````;;:::;;': ``````;'';;;;;;;'+.``,@#@+  .@########++########;    
+        :';;;;;:```````````'';::::;;';`````''';;;;;;;'+,``.#####` `##################@+    
+        :';';';````````````.;:::,:;;;':```;'';;;;;;;'';`` '####@.  +##################+    
+        :'''''```````````````;:::::;;;'';''';;;;;;;''+```;@####@,  .::,,,,....````````:    
+        :''''````````````````.;::::;;;;''';;;;;;;;''+,``.@#####@,                     :    
+        :'''``````````````````.;::::;;;;;;;;;;;;;''+;```+######'                      :    
+        :+'```````````,````````.;:::;;;;;;;;;;;;''++```;@#####'     `......,,,:::::   :    
+        :'``````````.'+:````````.;:::;;'';';;;;'''+.``.##@###+      ####@@#########`  :    
+        :.`.`````.``;''',````````.;::;'''''''''''+;```:..;##+`      +#++##########.   ;    
+        :,.....`...+';;;':``...`.`.;;;;'''''''''++```,,.` `:`   '`  ;#+++#######+`   ;@    
+        :,.......`'+';;;'+,`......`:;;;++++++++++.``,',`      `'@:  ,#++++######.   :@@    
+        :,.......++'';;;';.........'''':;'''+++#:```#@@#:     '##'  .#+++++####`   ;@@#    
+        :,.....`'+'''';';`........:''+. ``````..```'@##@#`    '###` `#+++++###.   :@#;;    
+        :,.....+++''''+;.........;+'+.````````````:@###@, ` ```###.` '#+++++#` ` ;@@, ;    
+        :,....+#+'''++'.........;+'+:```......```.#####; ``,`` :##,` :#+++++.`` :@@: `;    
+        :,...##+++++#'.........'+'+:```;;;;@@@@@#@###@: ` ;@' ` +#; `.#++++``` ;@@; ` '    
+        :,..+##++++#+.........;+'+;```:':,+@########@'```,@#@,``;#+ ``++##.```:@@#.``'@    
+        :,.###++++#'.........+++#'```:+,.,#########@'`.`:@##@+``,@#```+#+``.`;##@:``;@@    
+        :,+###++++#,........'+++'```,@'..:@#######@+`.`.#@@##@...##,``;#.`.`:#+##```#@#    
+        :###+++++##:...,...++'++```.@@;..'@######@+`....'+#@@@,..#@;`..`..`'##+#'``;@@@    
+        :###++++++#+..,...'#+++.``.##@:..+######@@,.....`..,::...'#;.....`;@##+#:..#@@@    
+        :###++++++##+..,,+#++#.```+##@:..+#####@@@'```...................'######:.,@@@@    
+        :###++++++++#+:,'#++#:```'@##@;..'@#####@@@++';:,,..............;@######,.,@@@@    
+        ,##++++++++++####++#:```'@####'..;@#####@#@@@@@@@@@##'.,.::,,..'########,.:@@@@    
+        ,###++++++++++++++#'```:@#####+.,,#######@@@@@######@#,,,#@##++@#######@:,:@@@@    
+        ,#@##++++++++++++#'`` :@#######,,.+@#######@########@:,,:@#############@;,,#@@@    
+        ,.:+###+++++++++#+```.#@######@',,:@################+.,.'###############',,+@@@    
+        ,,```:+##++++++#+```,@@########@:,,;@###############,,,:@################,,:##@    
+        ,.``` `:+##++++#,```+@##########',,,'@#############:,,,+@###############@:,,+##    
+        ,#'. `````:+###.```#@###########@',:,;#@########@+:,:,'@################@#,::@#    
+        ,#@@',``````:+:```'@#############@;,:,:+#@##@@##',::,'@#################@@;:,'#    
+        :###@@#'. ```````'@###############@',::::;''';:::::,+@############@@@@@@@@#:::'    
+        :######@#',`````:@################@@+:::::::::::::;+@########@@##@@@@@@@@@@#::'    
+        :#########@#'. :@####################@#;::::::::'#@########@@;+@@@@@@@@@@@@@#:'    
+        :###########@@'@######################@@#+''''+#@@@########@# ,@@@@@@@@@@@#@@#+    
+        :########################################@@@@@@@###########@:  '@@@@@@@@@@#@@@@    
+        :#########################################################@#`  `#@@@@@@@@@@@@@@    
+        :##########################################################`    :@@@@@@@@@@@@@@    
+        :#########################################################'`````.@@@@@@@@@@@@@@    
+        :#########################################################@######@@@@@@@@@@@@@@    
+        :@###################################@############@@@###@@#@@@@@@#@@@@@@@@@@@#@    
+        :@@########@'`````,#@@@@:`#@@@#``````.+@#``+@@@@,`;@@`.@@'`.#@@@;`+@@@@@@@@@@#@    
+        ;@@#######@+``,::.`'@@@#` ;@@@+ `:::. ,@#  .@@@+  ;@#`.@@'  :@@@; +@@@@@@@@@@@@    
+        ;@@########``#@@@@#@@@@,..`#@@# ,@@@@.`@#   ;@#`  ;@@`.@@' ` ,@@; +@@@@@@@@@@@@    
+        ;@@#######' ,@@#+++#@@# ;+ :@@# .+++; .@# ,`.@; : ;@@`.@@' +, :@; +@@@@@@@@@@@@    
+        ;@########' :@@' ` `@@: #@.`+@#  `   ;#@# :+ :`.' ;@@`.@@' +@. :; +@@@@@@@@@@@@    
+        ;@@#######+ .#@@@@,`@#`,##: :@# ,@#. +@@# :@.  +' ;@@`.@@' +@#. ` +@@@@@@@@@@@@    
+        ;#@#######@: `'##'``@:  `   `## ,@@#.`+@# :@' :@' ;@@`.@@' +@@#`  ++'@@@@@@@@@#    
+        `##########@:`   ``;#`,####; :#`,@@@'`,@#`:@@.+@'`;@@`.@@' +@@@#.`+;:#@@@@@@@@#    
+         +##########@@#++#@@##@@@@@@##@##@@@@##@@##@#@@@@#@@@##@@@#@@@@@@#@##@@@@@@@@@+    
+         `#############@@####@######@@@@@@@@@@@#######@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#.    
+          '#########################@@@@@@@@###########@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'     
+           ###################@@@@@@@@@@@@@@##########@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#      
+           `##################@@@@@@@@@@@@@@##########@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#`      
+            .##############@@@@@@@@@@@@@@@@@@#######@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#,       
+              +########@@@@@@@@@@@@@@@@@@@@@@@@@####@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+.        
+               :######@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###;          
+                 .++########################################################++,            
+                                                                                           
+                                                                                           
+                                             [...]                                         
+                                                                                           
+               The Garmin Communicator Plugin API is a browser plugin and                  
+               JavaScript support code that allows developers to transfer location         
+               data such as  waypoints, track logs, maps and points of interest            
+               (POI) to and from a Web site and Garmin device. This will simplify          
+               loading location data to a Garmin GPS unit, according to the company.       
+                                                                                           
+Release History communicator-api-1.9 (Aug 23rd, 2011)                                      
+                                                                                           
+This version of the API requires Communicator Plugin 3.0.1.0 or newer                      
+Added parent/child device API. It is now possible to determine the device that is hosting  
+  an SD card                                                                               
+Added example to demonstrate parent/child device API                                       
+Added DeviceDisplay example to demonstrate how to list FIT activity files on a mass storage
+  device                                                                                   
+Added ability to retrieve fitness data in TCX format from FIT devices                      
+*Note* because TCX does not fully encapsulate FIT, the conversion can be lossy             
+Added example showing how to read fitness data in TCX format from any Garmin fitness device
+Fixed issues with IE9 erroneously reporting that plugin functions and fields do not exist  
+Fixed issue in DeviceDisplay layer when listing an empty fitness device                    
+Fixed a DeviceControl exception that was not properly routed through the registered        
+  exception handler                                                                        
+Corrected and improved several portions of DeviceControl and DevicePlugin documentation    
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                     GarminDeviceControl.js                                
+------------------------------------------------------------------------------------------ 
+                                                                                           
+/** Returns the GPS data that was last read as an XML DOM.                                 
+ * Pre-requisite - Read function was called successfully.                                  
+ *                                                                                         
+ * Minimum plugin version 2.1.0.3                                                          
+ *                                                                                         
+ * @return XML DOM of read GPS data                                                        
+ * @see #readDataFromDevice                                                                
+ * @see #readHistoryFromFitnessDevice                                                      
+ * @see #readHistoryDetailFromFitnessDevice                                                
+ * @see #readCourseDetailFromFitnessDevice                                                 
+ */                                                                                        
+getGpsData: function() {                                                                   
+                                                                                           
+  if (!this.isUnlocked())                                                                  
+          throw new Error(Garmin.DeviceControl.MESSAGES.pluginNotUnlocked);                
+  if (this.numDevices == 0)                                                                
+          throw new Error(Garmin.DeviceControl.MESSAGES.noDevicesConnected);               
+  if( this.getReadCompletionState != Garmin.DeviceControl.FINISH_STATES.finished ) {       
+          throw new Error(Garmin.DeviceControl.MESSAGES.incompleteRead);                   
+  }                                                                                        
+                                                                                           
+  return this.gpsData;                                                                     
+},                                                                                         
+                                                                                           
+                                                                                           
+                                                [...]                                      
+                                                                                           
+                                       `..,::::::::,,.`                                    
+                                    `.;;;;;;;;;;;;;;;;;;,``                                
+                                  .;;;;;;;;;;;;;;;;;;;;;;;;:`                              
+                                :;;;;;;;;;;;;;;;;;;;;;;;;;;;;:.                            
+                              .;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:`                          
+                            `:;;;;;;;;;;;;;;;;;;;;;;;,`:;;;;;;;;;,                         
+                           ,;;;;;;;;;;;;;;;;;;;;;;;:     `:;;;;;;;;                        
+                         `:;;;;;;;;;;;;;;;;;;;;;;:`        `,;;;;;;;.                      
+                        `:;;;;;;;;;;;;;;;;;;;;;;.            `:;;;;;;.                     
+                       `;;;;;;;;;;;;;;;;;;;;;;,                ,;;;;;;.                    
+                      `;;;;;;;;;;;;;;;;;;;;;:                   `;;;;;;,                   
+                     `:;;;;;;;;;;;;;;;;;;;:`                      :;;;;;.                  
+                     ,;;;;;;;;;;;;;;;;;;;;,                        :;;;;;`                 
+                    ,;;;;;;;;;;;;;;;;;;;;;,                         :;;;;:                 
+                   `;;;;;;;;;;;;;;;;;;;;;;,                          ;;;;;:                
+                  `;;;;;;;;;;;;;;;;;;;;;;;,                          `;;;;;`               
+                  .;;;;;;;;;;;;;;;;;;;;;;;,                           `;;;;;`              
+                 `;;;;;;;;;;;;;;;;;;;;;;;;,              ``            :;;;;.              
+                 ,;;;;;;;;;;;;;;;;;;;;;;;;,             `;;`            ;;;;;`             
+                `;;;;;;;;;;;,`,;;;;;;;;;;;,            `;;;;.           ,;;;;,             
+                ,;;;;;;;;;:.  ,;;;;;;;;;;;,           `;;;;;;.           ;;;;:`            
+"You have to do`;;;;;;;;;.    ,;;;;;;;;;;;,          `;;;;;;;;`          .;;;;`            
+ all this crazy`;;;;;;;,      ,;;;;;;;;;;;,         `;;;;;;;;;;`         `;;;;:`           
+ crap that     ,;;;;;,`       ,;;;;;;;;;;;,        `;;;;;;;;;;;;.         :;;;;`           
+ just doesn't `;;;;;`         ,;;;;;;;;;;;,       `;;;;;;;;;;;;;;.        `;;;;`           
+ seem         `;;;;,          ,;;;;;;;;;;;,      `;;;;;;;;;;;;;;;;`        ;;;;.           
+ necessary."  .;;;;`          ,;;;;;;;;;;;,     `;;;;;;;;;;;;;;;;;;`       ;;;;:`          
+             `.;;;;           ,;;;;;;;;;;;,    `;;;;;;;;;;;;;;;;;;;;`      :;;;;`          
+             `,;;;;           ,;;;;;;;;;;;,   `;;;;;;;;;;;;;;;;;;;;;;.     .;;;;`          
+             `:;;;:           ,;;;;;;;;;;;,   ::::::;;;;;;;;;;;;::::::     `;;;;.          
+             `:;;;:           ,;;;;;;;;;;;,         ;;;;;;;;;;;;`           ;;;;.`         
+             `;;;;,           ,;;;;;;;;;;;,         ;;;;;;;;;;;;`           ;;;;.`         
+             `;;;;,           ,;;;;;;;;;;;,         ;;;;;;;;;;;;`           ;;;;.`         
+            ``;;;;,           ,;;;;;;;;;;;,         ;;;;;;;;;;;;`           ;;;;.`   <a href="{{LINK_2}}">Forums</a>
+            ``;;;;,           ,;;;;;;;;;;;,         ;;;;;;;;;;;;`           ;;;;.`         
+            ``;;;;:     ``````:;;;;;;;;;;;:`````    ;;;;;;;;;;;;`           ;;;;.`         
+            ``:;;;:     ,;';;';;;;;;;;;;;;;'''';`   ;;;;;;;;;;;;`           ;;;;.`         
+            ``,;;;:      .;;;;;;;;;;;;;;;;;;;;;`    ;;;;;;;;;;;;`          .;;;;.`         
+            ``,;;;;       .;;;;;;;;;;;;;;;;;;;`     ;;;;;;;;;;;;`          ,;;''``         
+             `.;;;;        .;;;;;;;;;;;;;;;';`      ;;;;;;;;;;;;`          ;;;;;``         
+             `.;;;;.        ,;;;;;;;;;;;;;;;`       ;;;;;;;;;;;;`          ;;;;:``         
+             ``';;;;         .;;;;;;;;;;;;;`        ;;;;;;;;;;;;`        `:';;;.`          
+             ``:;;;;`         .;;;;;;;;;;;`         ;;;;;;;;;;;;`       :;;';;;.`          
+             ``.;;;;.          .;;;;;;;;;`          ;;;;;;;;;;;;`     ,;;;;;;';``          
+              `.;;;;;           .;;';;;;`           ;;;;;;;;;;;;`   `;;;;;;';;,``          
+              ``:;;;'.           .';;;;`            ;';;;;;;;;;;`  ;;;;';';;;;.``          
+              ``.;';':            `';;`             ;';;;;;;;;;;.:;;';;'';';':.`           
+               `.:;';'.            .;`              ;';;;;;;;;;;;;';;;;;;;;;'.``           
+               ``,;'';;                             ;;';;;;;;;;;;;;;;;;;;;;;:.``           
+               ``.:;''':                            ;;'''''''''''''''''''';'.``            
+                ``.;;'';.                           ;''''''''''''''''''''';:.``            
+                ``.,;';';`                          ;''''''''''''''''''''';.``             
+                 ``.;'';';                          ;;'''''''''''''';'''';,.`              
+                 ``..;''';;                         ;'''''''''''''''''';':.``              
+                  ``.,''''';`                     `:''''''''''''''''''';:.``               
+                   ``.,''''';`                  `,''''''''''''''''''''';..``               
+                    `..:''''''.                ,'''''';''''''''''''''';..``                
+                    ``..,'''''';`            .';''''''''''''''''''''';..``                 
+                     ``..,;''''';,         .;';''''''''''''''''''''':..``                  
+                      ``..,;''''''',`    `:'''''''''''''''''''''''':..``                   
+                       ``...:'''''''';.`,'''''''''''''''''''''''';,..``                    
+                        ```..,;''''''''''''''''''''''''''''''''':,..``                     
+                         ```..,,;''''''''''''''''''''''''''''';,..```                      
+                          ```...,:;'''''''''''''''''''''''';:,...```                       
+                            ```...,,;;''''''''''''''''''';:,...```                         
+                              ```....,,:;'''''''''''';:,,....````                          
+                               ````......,,,,,,,,,,,,,.....````                            
+                                 `````..................`````                              
+                                    ````````........``````                                 
+                                        ```````````````                                    
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                               <a href="{{LINK_3}}">Garmin Communicator for jQuery</a>                              
+------------------------------------------------------------------------------------------ 
+                                                                                           
+               &lt;!-- Installation --&gt;                                                       
+                                                                                           
+&lt;script src="jquery.js"&gt;&lt;/script&gt;                                                          
+&lt;script src="underscore.js"&gt;>&lt;/script&gt;                                                     
+&lt;script src="garmin.js"&gt;>&lt;/script&gt;                                                         
+&lt;script&gt;                                                                                   
+  $(function() {                                                                           
+    var g = Garmin.Communicator();                                                         
+    g.selectDevice(0);                                                                     
+    // Read activities from the device.                                                    
+    g.readActivities(function(data) {                                                      
+      // data contains XML!                                                                
+    });                                                                                    
+    // Write workouts to the device.                                                       
+    g.writeWorkouts("Valid XML data");                                                     
+  });                                                                                      
+&lt;/script&gt;                                                                                  
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                  <a href="{{LINK_4}}">Source code archives for Garmin's Linux-based products</a>                   
+------------------------------------------------------------------------------------------ 
+                                                                                           
+                                                                                           
+Linux Source Code                                                                          
+                                                                                           
+This page contains links to source code archives for Garmin's Linux-based products.        
+                                                                                           
+Choose A Product:                                                                          
+                                                                                           
+n&uuml;vi 295W                                                                                  
+n&uuml;vi 8xx Series                                                                            
+n&uuml;vi 5xxx Series                                                                           
+n&uuml;vi 9xx Series                                                                            
+n&uuml;vifone G60 Series (APAC)                                                                 
+nuvifone G60 Series (AT&amp;T)                                                                 
+nuvifone G60 Series (Atlantic)                                                             
+nuvifone G60 Series (Poland, Czech Republic &amp; Greece)                                      
+nuvifone G60 Series (Sunrise)                                                              
+nuvi 25xx Series                                                                           
+nuvi 35xx Series                                                                           
+Notes                                                                                      
+                                                                                           
+                                                                                           
+Archive Format                                                                             
+                                                                                           
+                                                                                           
+The archives are in the format of bzip2-compressed tarballs, and they each extract into a  
+directory of their own, named according to the particular product and software version     
+number. Each archive contains source code organized by software license, then by package.  
+Every package is distributed with a tarball of its original source code, and, in some      
+cases, an additional patch which describes any modifications made by Garmin. For example:  
+                                                                                           
+                                                                                           
+  nuvi8xx-v2.xx-sources/                                                                   
+   |                                                                                       
+   +-- GPL/                                                                                
+   |    |                                                                                  
+   |    +-- linux-daisy-2.6.17.7-daisy-2.xx                                                
+   |         |                                                                             
+   |         +-- linux-daisy-2.6.17.7-daisy-2.xx.orig.tar.bz2                              
+   |         +-- linux-daisy-2.6.17.7-daisy-2.xx.diff.tar.bz2                              
+   |                                                                                       
+   +-- LGPL/                                                                               
+   |    |                                                                                  
+   .    .                                                                                  
+   .    .                                                                                  
+   .    .                                                                                  
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                           <a href="{{LINK_5}}">Garmin Communicator Plugin for Linux</a>                            
+------------------------------------------------------------------------------------------ 
+                                                                                           
+                 I had many different ideas on how to best transfer geocaches              
+                 to my garmin device, but they were all based on parsing the               
+                 geocaching.com website because they do not offer an official              
+                 API to access the geocaches. The idea of having to update my              
+                 application every time they change their layout did stop me               
+                 from going that approach.                                                 
+                                                                                           
+  /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */              
+  /*                                                                                       
+   * GarminPlugin                                                                          
+   * Copyright (C) Andreas Diesner 2010 &lt;andreas.diesner [AT] gmx [DOT] de&gt;                
+   *                                                                                       
+   *                                                                                       
+   *                                [...]                                                  
+   *                                                                                       
+   * You should have received a copy of the GNU General Public License along               
+   * with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.                       
+   */                                                                                      
+                                                                                           
+   #include "config.h"                                                                     
+   #include &lt;stdio.h&gt;                                                                      
+   #include "npapi/npapi.h"                                                                
+   #include "npapi/npfunctions.h"                                                          
+   #include "npapi/npruntime.h"                                                            
+   #if HAVE_PRTYPES_H                                                                      
+        #include &lt;prtypes.h&gt;                                                               
+   #elif HAVE_ZIPSTUB_H                                                                    
+        #include &lt;zipstub.h&gt;                                                               
+   #endif                                                                                  
+                                                                                           
+                                    [...]                                                  
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                       <a href="{{LINK_6}}">osm2garmin</a>                                          
+------------------------------------------------------------------------------------------ 
+                                                                                           
+           Download OpenStreetMap data for the whole planet, update                        
+           existing planet data, add terrain contours generated from                       
+           SRTM3 database and generate garmin-compatible maps in a                         
+           single step.                                                                    
+                                                                                           
+           The application wraps following OpenStreetMap processing                        
+           utilities: Osmosis, Tile Splitter and Mkgmap. In addition,                      
+           a utility similar to Srtm2osm program has been developed                        
+           as a part of this application.                                                  
+                                                                                           
+                                                                                           
+    Utilities.getInstance().removeMonitoredProcess(planetUpdateDownloader);                
+    if (planetUpdateDownloader.getState() != PlanetUpdateDownloader.COMPLETED) {           
+        return 4;                                                                          
+    }                                                                                      
+                                                                                           
+    // start Planet updater                                                                
+    planetUpdater = new PlanetUpdater(parameters, regions);                                
+    planetUpdater.changeSupport.addPropertyChangeListener(this);                           
+    System.out.println("Planet file update started.");                                     
+    Utilities.getInstance().addProcessToMonitor(planetUpdater);                            
+    final ThreadProcessor procpu = planetUpdater;                                          
+    synchronized (procpu) {                                                                
+        if (procpu.getState() == PlanetUpdater.RUNNING) {                                  
+            try {                                                                          
+            procpu.wait();                                                                 
+            } catch (InterruptedException ex) {                                            
+                planetUpdater.setStatus("Interrupted.");                                   
+                planetUpdater.setState(PlanetDownloader.ERROR);                            
+                return 3;                                                                  
+            }                                                                              
+        }                                                                                  
+    }                                                                                      
+    Utilities.getInstance().removeMonitoredProcess(planetUpdater);                         
+    if (planetUpdater.getState() != PlanetUpdater.COMPLETED) {                             
+        return 4;                                                                          
+    }                                                                                      
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                       <a href="{{LINK_7}}">garmintools</a>                                         
+------------------------------------------------------------------------------------------ 
+                                                                                           
+            This software provides Linux users with the ability to communicate             
+            with the Garmin Forerunner 305 via the USB interface. While this is            
+            the only Garmin unit that I own, I did implement all of the documented         
+            Garmin protocols as of Rev C (May 19, 2006) over the USB physical              
+            link. This means that if you have a Garmin with a USB connection to a          
+            PC, you ought to be able to use this software to communicate with it.          
+                                                                                           
+    #include "config.h"                                                                    
+    #include &lt;math.h&gt;                                                                      
+    #include &lt;stdio.h&gt;                                                                     
+    #include &lt;time.h&gt;                                                                      
+    #include "garmin.h";                                                                   
+                                                                                           
+                                                                                           
+    #define BBOX_NW  0                                                                     
+    #define BBOX_NE  1                                                                     
+    #define BBOX_SE  2                                                                     
+    #define BBOX_SW  3                                                                     
+                                                                                           
+                                                                                           
+    typedef struct                                                                         
+    {                                                                                      
+      float lat, lon, elev;                                                                
+      time_t t;                                                                            
+    } route_point;                                                                         
+                                                                                           
+    int                                                                                    
+    get_gpx_data ( garmin_data *    data,                                                  
+                   route_point   ** points,                                                
+                   position_type *  sw,                                                    
+                   position_type *  ne )                                                   
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                              <a href="{{LINK_8}}">How To: Build Garmin-Asus Kernel from Source</a>                 
+------------------------------------------------------------------------------------------ 
+                                                                                           
+            So, here's a short how to for compiling the <a href="{{LINK_9}}">source code provided by</a>            
+            <a href="{{LINK_9}}">Garmin-asus</a>. Please note there may be a step or two missing. I'll be           
+            updating this later when I get a chance to start from scratch and              
+            compile a better How To.                                                       
+                                                                                           
+                                       [...]                                               
+                                                                                           
+            It should work, I pulled what I did from memory. So like I said, if            
+            you're having issues, give me some time to get together a better               
+            How To.                                                                        
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                  <a href="{{LINK_10}}">hacking the n&uuml;vi 200</a>                                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+            This OMAPS tm cpu is a custom arm based cpu made for Garmin.                   
+                                                                                           
+            We can disassemble the Firmware and find the framebuffer address               
+            using ida pro forexample or any freeware disassembler for those                
+            that do not have ida pro.                                                      
+                                                                                           
+            It is also necessary to find out how the updater works, if it has              
+            a special protocol, as when u plug the garmin into a computer its              
+            registered as a storage device. There may be a need for a special              
+            rs232 usb cable that can be bought in most computer stores or                  
+            ordered.                                                                       
+                                                                                           
+            If you watch the backside of the nuvi closely you will see a NAND              
+            chip - it is a NOT AND storage chip that contains the firmware -               
+            it may be divided into user space accessible as USB storage device             
+            where the rest is the firmware - or one of the other chips contains            
+            the firmware.                                                                  
+                                                                                           
+            The NAND chip comes from www.st.com ST micro electronics and is                
+            512Mb of size.                                                                 
+                                                                                           
+                                       [...]                                               
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                  <a href="{{LINK_13}}">Garmin Nav devices run Gnome Linux</a>                       
+------------------------------------------------------------------------------------------ 
+                                                                                           
+     .,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;:,..`      
+    .,;:,,,::::::::::::::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,.,...............     
+    ;:::;;;;;;::::::::::::::::::::::,,,,::,,,,,,,,,,,,,,,,,,,,.....,..,.,.......````  `    
+   ,,'###############################################################################' `   
+   ,,#################################################################################;    
+   .'##################################################################################.   
+   .'+#########################################@######################################',`  
+   .+++##'';;;;';;;;;;''';;;';''';;;;;;;';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+#'';,`  
+   .+++++;;'''''''''''''''''''''';'''''''''''''''''''''''''''''''''''';;;;;;;;;;;'';;;;,`  
+  `.+++++;;+#################+###+######+#+####+######+#########################;'';;;;:.  
+  `.+++++;;++++++++++++++++++;+;','#:',+,:;:;#+#,':,,:`:;+,##+:#++++++++++++++++''';;;;:.  
+  ..++++';;++++++++++++++++++:'++;++';'+.::,.+;;.:;,,,.:++:.,+#+++++++++++++++++''';;;;:.  
+  .,++++';;++++++++++++++++++++++++++++++++++++++++++++++++++'+++++++++++++++++'''';;;;:.  
+  ,,++++';;#++++'+++++++++++++++#+++++++#+#+++#++###++#+++++#++#+++#++++#++#+++#''';;;;:.  
+  ,,++++';;';:;:`.::.```.,..,.,...:';;,.``, `,,;,;''`  ,` .,..,.,.`,.``````.,,..''';;;;:.  
+  ,,++++';;':..,,.:::::,::::,:;;;;;,,:,::::::::::,,,,:::::::::::::::::::::::::;:''';;;;:.  
+  ,:++++';;;``` ``` ` :: `:;;::.` ` ,``` ````:::;;;;;:.``    `:`````````.`.,`.:,''';;;;:.  
+  ,:'+++';;:``,,,``.:,`;;;::. ````,,` ````::`:;;'''''''';:.````,:`` ;'';,..;``.,''';;;;:.  
+  ,:'+++';;:`.`..::.;;,:,;,;:,``:. ```````''.+#''''''''''';.` ` `:.;''''';,',:``''';;;;;.  
+  ,:'+++';;:`,:;;;;;;::',,,:,',```````````',:+#'''''''''''';.`..`.::,'''';;:;;''''';;;;:.  
+  .;''++';;:;:;;;;;:, ````````,`````````` '##:''''''''';'';;,``````::` ;':::::''''';;;;;.  
+  .;'''+';;'';;;:,. ` ```````..```````````'`,;+;.;;:;;.'''';,```.':::';' `,'';''''';;;;;.  
+  .;''''';;+;',:. `` `  ````,, `        ` #+@':,:::`;';,''';,,,,,,,..,,,` `` .;'''';;;;;.  
+  .;''''';;+,:,,,,,,,,,,,,,,,,,,.,:,,,,,,:#,; :,,,,,::::,,::` `````   `::```````''';;;;:.  
+  .;''''';;'..```,,```` ,.```` ,```````` ```` :::;;;;;;;;::: ```````````,,; ````''';;;;:.  
+  .;''''';;:`` :,``````,````  ,.`` `````````  ;;;;::;:;;:;:;, ``````````` ::.``.''';;;;:.  
+  .;''''';;:`,,.`````,, `````:: `````````````,;;;;;;;;;;;;;:;:`````````````:,; `''';;;;:.  
+  .;''''';;:::``````:: `````::`````````````` ,;;;;;;;;;;;;;:;;:::::::::::,,:::,:''';;;;:`  
+  .;'#''';;;.``````,:``````,: `````````````` ,;;;;;;;;;;;;;;;;,:..............;:''';;;;:`  
+  .;'#''';;:`````.,,` ````,.  ```````````````,;;;;;;;;;;;;;;;;;,```````````````,''';;;;:`  
+  .;'+''';;:````,,.``````..``````````````````,;;;;;;;;;;;;;;;;;;:  ````````````,''';;;;,`  
+  .;''''';;,`` :,  ``````,.``````````````````,;;;;;;;;;;;;;;;;;:,:`````````````,''';;;;,`  
+  .;''''';;:``,;   `````.,``````````````````.,;:;;;;;;;;;;;;;;:;;..````````````,''';;;;,   
+  .;''''';;:..:``````` ,:```````````````````,,;:;;;;;;;;;;;;;;;:;;. ```````````:''';;;;.   
+  .;''''';;',,  ``````,; ```````````````````,::;;;:;;;:;;::;;::::::,```````````:''';;;;.   
+  ,:''''';;;.````````::`````````````````````;;;,::;`;:,;,;;';;:;;;:,:``````````:''';;;;.   
+  ,:''''';;:`````` `:,` ````````````````````::+::::,.,,::;;;;;;;;;;'.::::::::::;''';;;;`   
+  ,:''''';;:`````` ;.``````````````````````.@+;,.,...,,,,,,::::::::::,,::::::::;''';;;;`   
+  ,:''''';;:``````:,.``````````````````````:++.,````  `` ;, `````````,:` ``````;''';;;;`   
+  ,,''''';;:`````;,: ``````````````````````':::``````````,.,``````````,,;``````;''';;;;`   
+  .,''''';;:````:,:````````````````````````+#@@ ````````` ,:``````````:,: `````'''';;;;.   
+  .,''''';;;::::::::::::::,```````````````` :,````````````;. ```:::::::::::::::''';;;;:.   
+  ..''''';;'.````:::..   .;:````````````````:, ```````````,,: :',` `,.:,,`````;;'';;;;:.   
+  `.''''';;'.....,,,.:`````.;, ```````````` :,```````````` .::,`````;:,.,.....';'';;;;,`   
+  `.''''';;+..:'`.;'.'.+..``.:;;;++++++++++++++++++++++++;;::,``...'..,:;;....;''';;;;,`   
+   .''''';;+```+`@`+`+`+``.`.;;;;'';;;;;'':,;''';;;;;;;;';;;;````.@`.``#;:````;''';;;;.    
+   .''''';;+```.,:::`'`+:````.';;'''''''';:,;,,'''''''''';;;,`````@.., +``````'''';;;;`    
+   .''''';;+` `. ... ..`.  ` ,'''++'''''+'+''+''+'+''''''''',  ` ``: .:: ```  '''';;;;`    
+   .'''''';+'''''''''''''''''''''########################+'''''''''''''''''''+'''';;;;`    
+   .''''';;+###################################################+'';;::::,,,,,,,#'';;;;`    
+   ,;''''+'##############################################+'';;:::::::::::::::::'#;;;;;`    
+   ,:''''''''''''''''''''''''''''''''''''''''''''''''''''';''''';;'''';;;;;;;;;;;;;;;:`    
+   .,''''''':;:';;'''''';;;;'''''''''''''''''''''''''''''''''''''''''''''';;;;;;;;;;;.     
+    ,''''''';;';';;'''''';;'''''''''''''''''''''''''''''''''''''''''';'''';;;;;;;;;;:`     
+    `,:''''+''''''''''''''''''''''''''''''''''''''''''''''''''';';;;;;;;;;;;;;;;;;:.``     
+    `.';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'''''''''''''''''''''+,`     
+     `:'+++++++++++++++++++++++++++++''''''''''''''''''''''''''''''''''''''''''''';:.`     
+     ``.,,,,,,,,,,,,,,,,,,,,,,,,,..................................................``      
+       ```````````````````````````````````````````````````````````````````````````         
+                                                                                           
+            It had been rumored since the Nuvi 880 and Nuvi 860 shipped several            
+            months ago that the devices were equipped with embedded Linux, but             
+            when LinuxDevices asked Garmin for source code in March, the company           
+            replied: "Unfortunately, the information about the operating system            
+            of Garmin devices is considered proprietary." The Garmin Linux source          
+            code page, however, now lists source code for version 2.6, 2.7, and            
+            2.8 of the Nuvi 8xx software, as well as versions 3.7 and 3.8 for the          
+            Nuvi 5xxx.                                                                     
+                                       [...]                                               
+                                                                                           

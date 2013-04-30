@@ -1,0 +1,541 @@
+-<a id="carmack_1"></a>----------------------------------------------------------------------------------------- 
+                           <a target="_blank" href="{{LINK_1}}">Wolfenstein, Doom, Quake, Nexuiz, Xonotic</a>                       
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         John D. Carmack II (born August 20, 1970) is an American game programmer          
+         and the co-founder of id Software.  Carmack grew up in the Kansas City            
+         Metropolitan Area where he became interested in computers at an early age.        
+         He attended <a target="_blank" href="{{LINK_15}}">Shawnee Mission East High School</a> in Prairie Village, Kansas and       
+         Raytown South High School in nearby Raytown, Missouri.                            
+                                                                                           
+         Carmack is the son of <a target="_blank" href="{{LINK_2}}">late local television news reporter</a> <a target="_blank" href="{{LINK_3}}">Stan Carmack</a>.           
+                                                                                           
+         Carmack was also the <a target="_blank" href="{{LINK_16}}">lead programmer of the id video games</a> Commander Keen,        
+         Wolfenstein 3D, <a target="_blank" href="{{LINK_21}}">Doom</a>, Quake, Rage and their sequels.                              
+                                                                                           
+         ...when asked for a release date on a new title, Carmack will usually reply       
+          that the game will be released "when it's done."                                 
+                                                                                           
+                                                                                           
+         He is personally responsible for a number of significant enhancements and         
+         <a target="_blank" href="{{LINK_20}}">breakthroughs in computer graphics</a> which have now become commonplace.             
+                                                                                           
+                                   ```.;;::.                                               
+                                   ';:;;+++'.                                              
+                                .:;'';;;:';;;;.                                            
+                               ::'''';''#+'+';'#+                                          
+                             ,:::;''++++#####''+;#                                         
+                          `:;';;;'#@@'+@#@@;;#++@@@@:                                      
+                         ':,,:+;;+'@#+#+'@@+;;''+@@+:';`                                   
+                       ::::::;';+''':;;;;'#''''#'##+++';:.                                 
+                      ;:::::;';'::#+;';:;'+;''+''++@#'';'':                                
+                      :,::::::';;';+,##:;'':;;+';@#@@+';:'@                                
+                     ::::;;;:;+;'';;;'++',';';;';##+'';'':'#                               
+                   ,:;;;':'';'''','+;';'';:;';:':;:''';';;''                               
+                  +:,:;::;'''+;';;+':;;;:;:::;;:':;';+''';;;#                              
+                  ;::;;';;;;';;;';';;;;::;;;:,:';:;::';;''';+                              
+                  :::;'';;;;;;:;;;;;:;;::;:::;:;';:;:,+;'+''',                             
+                  ';;+@';';;;::::::::::,::::::;;''''';#++:+#+'                             
+                 ,:;'#@'';:,,,::::::::,,::::::;:;'''';;+'#'+#+                             
+                 ':;+#'':,,,,,,,,,::,,,,,::::;::;';+'''';'#+'+                             
+                 +;''@;;,,,...,,,,,,,,,,,::,,::::'+''''':''+#'.                            
+                `;;'+#;:,,........,,,.,,,,,,,::::;'''''';++@++:                            
+                :;''#'::,,........,...,,,,,,,:::;:''''+';'+'+#;                            
+                ';'+@;::,,,....,,,,,,,,,,,,,,:::;:;+'+'';+'''+`                            
+                `''##:::,,,,,,,,.,,,,,...,,,,:;:;;;''+'''@+'+''                            
+                 ,'++:,:,,,,,,..,,,,,,,....,,:;:;;;'+'+';@@;#++                            
+                 ;;#+:,,,,,,,,,,,,,..,,,,,,,,:;:;;;;';##+@@++++                            
+                 ::#'::,,,,,.,..,....,,,,.,,,,::;;;;;'#+@+#+#'#                            
+                  :',::,,,,.........,,,,,.,,,,,:;;;;'++#@@#+'#+                            
+                  :;:;:,,.,,,,,.,,,,::;;';;;:,,:;;;;'''#@@@@+##                            
+                  ;;;;,,,.,:,,:,,,:;;+'#:@#+++,:;';;'''@@@@++++                            
+                  :;;;,,,:;';;::,:;'#@@@@';'@+;+;@@@#++#@@@#;++                            
+                   ;';,'':+;#'#;,,:#@@@@'@'@'+;'+''''@@@@@@@+'@                            
+                    .::++@@@@@#.;:++++@#'@@''+'@+'''++@@@@@@#@.                            
+                   ;':';#+@@@@@:,,;#;;'::;;;+'::::;;;'@@@@@:....                           
+                   ;';;+'#@@@@+:,,;#+;;:;;;:;,,,:,:;;''##;::@@+,                           
+                   .+;;'';::;;#:,:;;,::::,,,:;.,,,;;';;#+;:+:;++,                          
+                    ''#'';;'::':,:;;;;,;;::,,,,,,:;;;;;'';::,:;;:                          
+                    `'';;,,,,;':::;;;;':,,::,:,,:;;:;;;'''',,,;;:                          
+                    ,':::;';,:;,,:;;;;;,,.,,,,,:;;;;;''';:'+:,;;,                          
+                    ,':.,,,::;;,,:';;;;:,,,,,,:::;;;''''':'#;:::                           
+                    ;':,,:,.,,;::;'#;;'::,,,,::;:;;'''+';:;:;::,                           
+                    ;+:,,,.,,,++++@@@'';::,,,::;;;''''+';::,::;,                           
+                    :'::,,,,,:'@##';''+;;:::::::;;''''++;;:;;,;                            
+                    `';::,,:::;+:'';;;;;:::::::;;;;'''+'';:,;::                            
+                     ;::::::::;;:,,::;;;;:;:;::;;;;''''''::::;                             
+                     ,;;::::::;:::,:::;::::::;;;;;;''+':@;:::.                             
+                     ',';:::::::::;:::::::;;:::;;;;'''+'@@''                               
+                     ;,';::::::::,,::::;;;:;:;;;;;;';''+@@@                                
+                      ::;;::::::::,;;;:;:;;;;;;;;;;;;''+@@'                                
+                      ,:';::;;::'+++###+++';;;;;;;;''''+;':                                
+                      ::;;::;:;#@@@@+';''';;;;;;;;;;''+';;.                                
+                       #';;;;''';'+;;;';+';;;'';;;''''#';:.                                
+                        ##;;;:';;;;;;''+';;;;'';'';''+#';:,                                
+                       ;@@;;;::;'''+###+;;';;';''';'++@;;:,                                
+                      .@@@';';;;;++@+#';;;;';'';';'++#+;::;                                
+                      `+@@''';:;;;';'::;:;:;;';;;'++@@';;:;    @                           
+                       `` ''';;;:::,,:,,:::''''';'+@@+;;;::  :@@.                          
+                           ';';:::,,:::::::;';''+#@@+';:::, ;@@@@                          
+                           .;';:,,,,::::;;;'''''#@@+';;;;:,@@@@@@,                         
+                            ';';:;:,;:;;''''+++@@@#+';::;;:@@@@@@@;                        
+                             +';;;;;;'''''#@##@@@@+'';;;;;;@@@@@@@@`                       
+                              '++''++#+@@@@@@@@@@@+'';;;;;@@@@@@@@@##                      
+                               ###@@@@@@@@@@@@@@@#+';;;;'@@@@@@@@@@##.                     
+                                ;#@@@@@@@@@@@@@@++'';;:'@@@@@@@@@@@@##                     
+                                ;;;#@@@@@@@@@@+++;';;:+@@@@@@@@@@@@#@#'                    
+                                ';;'+@@@@@@@#'';;;'::@@@@@@@@@@@@@@##@'                    
+                                '::''''@@@+'';;;';;:@@@@@@@@@@@@@@@@###++,                 
+                                +::;';;'+';'';;';;:@@@@@@@@@@@@@@@@@@++##+++`              
+                                `:::;;;'';;''';;;;@@@@@@@@@@@@@@@@@@@@####+++              
+                              #@;::;;;;'+++';';;;+@@@@@@@@@@@@@@@@@@@@#@@@###              
+                             .@@@':::;;;'#@';;;;;@@@@@@@@@@@@@@@@@@@@@@##@@@@              
+                            .#@@@@:::::;;;;;:;;;@@@@@@@@@@@@@@@@@@@#@@@@#+#@#              
+                           @@@@@@@@;::::;:;::::;@@@@@@@@@@@@@@@@@@@@@@@@@##+#              
+                        `+@@#@@@@@@':,,,,,,,,,:+@@@@@@@@@@@@@@@@@##@@@@@@#+@@              
+                 :     @@@@#@@@@@@@@::,,,:::::'@@@@@@@@@@@@@@@@@@+#@@@@#+##@@              
+               , @  ,##@@@@+@@@@@@@@@:,,,,::::;@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@              
+             '@@;++#+##+#@'#@@@@@@@@@',,,,,::;:@@@@@@@@@@@@@@@@@++@@@#@@@@@@@              
+            :@@@#@#+'+#@@'+@@@@@@@@@@@;,,,,::::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@              
+           .@@@@##+'+'++'#@@@@@@@@@@@@+':,,::@@@@@@@@@@@@@@@@@@@+@@@@@@@@@@@@              
+           +@@@@@@@#++#+@@@@@@@@@@@@@@@';;';;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@              
+          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;:''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@              
+          `@@@@@@@@@@@#@@@@#@@@@@@@@@@@@@;''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@              
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                       "WOLF3D iOS v2.1"                                   
+------------------------------------------------------------------------------------------ 
+                                                                                           
+WOLF3D iOS v2.1 GPL source release                                                         
+===============================================                                            
+                                                                                           
+This file contains the following sections:                                                 
+                                                                                           
+GENERAL NOTES                                                                              
+LICENSE                                                                                    
+                                                                                           
+GENERAL NOTES                                                                              
+=============                                                                              
+                                                                                           
+WOLF3D iOS v2.1 is a free release, and can be downloaded from                              
+<a target="_blank" href="{{LINK_4}}">https://github.com/id-Software/Wolf3D-iOS</a>                                                  
+                                                                                           
+This source release does not contain any game data, the game data remains subject to the   
+original EULA and applicable law.                                                          
+                                                                                           
+                                                                                           
+LICENSE                                                                                    
+=======                                                                                    
+                                                                                           
+See COPYING.txt for the GNU GENERAL PUBLIC LICENSE.  If COPYING.txt does not accompany,    
+write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA       
+02111-1307, USA.                                                                           
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                        wolf_level.h                                       
+------------------------------------------------------------------------------------------ 
+                                                                                           
+/*                                                                                         
+                                                                                           
+        Copyright (C) 2004 Michael Liebscher                                               
+        Copyright (C) 2000-2002 by DarkOne the Hacker                                      
+                                                                                           
+        This program is free software; you can redistribute it and/or                      
+        modify it under the terms of the GNU General Public License                        
+        as published by the Free Software Foundation; either version 2                     
+        of the License, or (at your option) any later version.                             
+                                                                                           
+        This program is distributed in the hope that it will be useful,                    
+        but WITHOUT ANY WARRANTY; without even the implied warranty of                     
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                      
+        GNU General Public License for more details.                                       
+                                                                                           
+        You should have received a copy of the GNU General Public License                  
+        along with this program; if not, write to the Free Software                        
+        Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.        
+                                                                                           
+*/                                                                                         
+                                                                                           
+/*                                                                                         
+ *        wolf_level.h:  Wolfenstein3-D level management.                                  
+ *                                                                                         
+ *        Author:        Michael Liebscher &lt;johnnycanuck@users.sourceforge.net&gt;            
+ *        Date:        2004                                                                
+ *                                                                                         
+ *        Acknowledgement:                                                                 
+ *        Portion of this code was derived from NewWolf, and was originally                
+ *        written by DarkOne the Hacker.                                                   
+ *                                                                                         
+ *        Acknowledgement:                                                                 
+ *        Portion of this code was derived from Wolfenstein3-D, and was originally         
+ *        written by Id Software, Inc.                                                     
+ *                                                                                         
+ */                                                                                        
+                                                                                           
+/*                                                                                         
+        Notes:                                                                             
+        This module is implemented by wolf_areas.c, wolf_doors.c, wolf_level.c and         
+        wolf_pushwalls.c                                                                   
+                                                                                           
+*/                                                                                         
+                                                                                           
+#ifndef __WOLF_LEVEL_H__                                                                   
+#define __WOLF_LEVEL_H__                                                                   
+                                                                                           
+                                                                                           
+///////////////////                                                                        
+//                                                                                         
+//        Areas                                                                            
+//                                                                                         
+///////////////////                                                                        
+                                                                                           
+#define NUMAREAS                37                      // number of areas                 
+#define FIRSTAREA                0x6B                   // first area in map data (it is   
+                                                        // by the way a way to the         
+                                                        // secret floor!)                  
+#define AMBUSHTILE                0x6A                  // def guard                       
+#define AMBUSH                        -2                                                   
+                                                                                           
+                            ++++++++++++++++++++++++++                                     
+                            ++++++++++++++++++++++++++``                                   
+                          ++'';;'';;;;;;;;;;;;;;;;;;;;;;''++                               
+                          ++'';;'';;;;;;;;;;;;;;;;;;;;;;''++``                             
+                        ++'''''';;'';;;;;;;;;;;;;;;;;;;;;;''++``                           
+                        ++'''''';;'';;;;;;;;;;;;;;;;;;;;;;''++.```                         
+                        ++'''''''''''''''''''''';;;;;;::;;;;'',..`                         
+                        ++'''''''''''''''''''''';;;;;;::;;;;'':,.``                        
+                      ++''''''''++'''''''''''''''';;;;::;;;;''++,.``                       
+                      ++''''''''++'''''''''''''''';;;;::;;;;''++:,.`                       
+                      ++''''''++''++++''''''++++'''';;;;'''';;++:,.``                      
+                      ++''''''++''++++''''''++++'''';;;;'''';;++;:,.`                      
+                      ++'''''';;::::::;;;;''++##++'';;'';;''''++;:,.`                      
+                      ++'''''';;::::::;;;;''++##++'';;'';;''''++;;,.``                     
+                      ++++;;;;,,....,,,,::::::;;;;;;;;..::;;''++';:,``                     
+                      ++++;;;;,,....,,,,::::::;;;;;;;;..::;;''++';:,.`                     
+                      ++++;;::::,,,,........::::;;,,''....;;++++';:,.`                     
+                      ++++;;::::,,,,........::::;;,,''....;;++++';:,.`                     
+                      ++++;;..,,..............::::,,......::++++';:,.`                     
+                      ++++;;..,,..............::::,,......::++++';:,.`                     
+                      ++++;;::++++'';;``......::::....``..::++++';:,.`                     
+                      ++++;;::++++'';;``......::::....``..::++++';:,.`                     
+                    ++;;++;;''''''++++;;......,,::''++++``::++++';:,.`                     
+                    ++;;++;;''''''++++;;......,,::''++++``::++++';:,.`                     
+                    ++::##::::####;;''++;;;;;;####++'';;''..##::++:,.`                     
+                    ++::##::::####;;''++;;;;;;####++'';;''..##::++:,.`                     
+                    ++;;''::::++++``..++::,,;;++++''``..::::##,,++:,.``                    
+                    ++;;''::::++++``..++::,,;;++++''``..::::##,,++;:,.`                    
+                    ++::,,::....,,,,......``,,....,,,,....::''::++;:,.`                    
+                    ++::,,::....,,,,......``,,....,,,,....::''::++;;,.``                   
+                    ++,,::,,``````````..,,``......````````,,,,::++';:,``                   
+                    ++,,::,,``````````..,,``......````````,,,,::++';:,.`                   
+                    `.::'',,..````....::..``..,,....````..,,..,,++';:,.`                   
+                    ``::'',,..````....::..``..,,....````..,,..,,++';:,.`                   
+                    ``++''::........,,;;'''''';;,,........::''::+'';:,.`                   
+                     `++''::........,,;;'''''';;,,........::''::+'';:,``                   
+                     `++'',,::......,,,,,,::,,..,,......::,,''+++';;,.``                   
+                     `++'',,::......,,,,,,::,,..,,......::,,''++'';:,.`                    
+                      `.'',,,,,,....,,............,,....,,,,''++'';:,.`                    
+                      `.'',,,,,,....,,............,,....,,,,''++';:,.``                    
+                      ``++,,,,,,....::;;::::::::;;;;,,..,,,,+++'';:,.`                     
+                       `++,,,,,,....::;;::::::::;;;;,,..,,,,+++'';:,.`                     
+                       `++::........,,,,....````..,,......,,##+';;,.``                     
+                       `++::........,,,,....````..,,......,,##'';:,.`                      
+                        ++;;::..........,,,,::,,,,..........##'';:,.`                      
+                        ++;;::..........,,,,::,,,,..........##';:,.``                      
+                        ++;;;;::....``````........````....,,##';:,.`                       
+                        ++;;;;::....``````........````....,,##';:,.`                       
+                        ++'';;''::,,........::........,,,,..++';:,.`                       
+                        ++'';;''::,,........::........,,,,..++';:,.`                       
+                        ++'''''';;::::::::::;;::::::::::;;..++';:,.`                       
+                        ++'''''';;::::::::::;;::::::::::;;..++';:,.`                       
+                        ++''++''''++++++++++++'''''''';;::..++';:,.`                       
+                        ++''++''''++++++++++++'''''''';;::..++';:,.`                       
+                        ++''++'''''''';;;;;;;;;;;;::....::,,+'';:,.`                       
+                        ++''++'''''''';;;;;;;;;;;;::....::,,+'';:,``                       
+                        `.''++'''';;;;::;;::::::;;........::+';;,.``                       
+                        ``''++'''';;;;::;;::::::;;........::'';:,.`                        
+                        ``'''''';;::::..::....,,::::``....::'';:,.`                        
+                         `'''''';;::::..::....,,::::``....::';:,.``                        
+                         `'''';;;;;;,,..::,,....,,::..,,::;;';:,.`                         
+                         `'''';;;;;;,,..::,,....,,::..,,::;;';:,.`                         
+                          `.,:;''++++++++++++++++++++++++++'';:,.`                         
+                          `.,:;;'''''''''''''''''''''''''''';;:.``                         
+                          ``.,:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:,.``                         
+                           `..,::::::::::::::::::::::::::::::,..`                          
+                           ``...,,,,,,,,,,,,,,,,,,,,,,,,,,,,...``                          
+                                                                                           
+                                            [...]                                          
+                                                                                           
+#define SOLID_TILE (WALL_TILE | BLOCK_TILE | PUSHWALL_TILE)                                
+#define BLOCKS_MOVE_TILE        (WALL_TILE | BLOCK_TILE | PUSHWALL_TILE | ACTOR_TILE)      
+                                                                                           
+///////////////////                                                                        
+//                                                                                         
+//        Doors                                                                            
+//                                                                                         
+///////////////////                                                                        
+typedef enum                                                                               
+{                                                                                          
+        dr_closing = -1,                                                                   
+        dr_closed,                                                                         
+        dr_opening,                                                                        
+        dr_open                                                                            
+                                                                                           
+} dr_state;                                                                                
+                                                                                           
+                                            [...]                                          
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                         <a target="_blank" href="{{LINK_5}}">Doom 3 engine</a>                                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+                         <a target="_blank" href="{{LINK_6}}">The Exceptional Beauty of Doom 3’s Source Code</a>                    
+                                       by Shawn McGrath                                    
+                                                                                           
+                  This is a story about Doom 3's source code and how beautiful it          
+                  is.  Yes, beautiful. Allow me to explain.                                
+                                                                                           
+                                            [...]                                          
+                                                                                           
+                  Unified Parsing and Lexical Analysis                                     
+                                                                                           
+                  One of the smartest things I've seen from Doom is the generic            
+                  use of their lexical analyzer and parser. All resource files are         
+                  ascii files with a unified syntax...                                     
+                                                                                           
+                                            [...]                                          
+                                                                                           
+                  The idPlane that gets passed as an argument will not be                  
+                  modified by this function. I can safely use the plane after              
+                  this function executes without checking for modifications of             
+                  the idPlane.                                                             
+                                                                                           
+                                            [...]                                          
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                         <a target="_blank" href="{{LINK_7}}">Quake engine</a>                                      
+------------------------------------------------------------------------------------------ 
+                                                                                           
+                    The <a target="_blank" href="{{LINK_19}}">Quake engine</a> is the game engine that was written to power          
+                    1996's Quake, written by id Software. It featured true                 
+                    <a target="_blank" href="{{LINK_22}}">3D real-time rendering</a> and is now licensed under the terms of          
+                    the GNU General Public License (GPL).                                  
+                                                                                           
+                    After release it immediately forked, as did the level design.          
+                    Much of the engine remained in Quake II and Quake III Arena.           
+                    The Quake engine, like Doom engine, used binary space                  
+                    partitioning (BSP). The Quake engine also used Gouraud shading         
+                    for moving objects, and a static lightmap for nonmoving objects.       
+                                                                                           
+                                            [...]                                          
+                                                                                           
+                    Sectioning the map to increase speed                                   
+                                                                                           
+                    To further decrease 3D rendering, a mechanism was developed to         
+                    section off large regions of the map that are currently not            
+                    visible to the player, and to not render those unseen spaces. A 3D     
+                    rendering engine without any such optimizations would draw every       
+                    part of the world and then attempt to determine which polygons are     
+                    the closest; then hide all the other polygons behind the closest       
+                    polygons (a technique known as Z-buffering); just because a            
+                    polygon is not visible does not mean it is not part of the scene       
+                    calculations.                                                          
+                                                                                           
+                                            [...]                                          
+                                                                                           
+                    <a target="_blank" href="{{LINK_8}}">QuakeC</a> is a very simplified dialect of the well-known C                
+                    programming language, and is used by the Quake I engine and its        
+                    derivatives.                                                           
+                                                                                           
+                    Example code                                                           
+                    To see what QuakeC looks like, here is a piece of example code:        
+                                                                                           
+                    // needed declarations:                                                
+                    float vlen(vector v) = #12;                                            
+                    entity nextent(entity e) = #47;                                        
+                    .string classname;                                                     
+                    .vector origin;                                                        
+                    // ...                                                                 
+                   entity findchain(.string fld, string match)                             
+                   {                                                                       
+                      entity first, prev;                                                  
+                      entity e;                                                            
+                                                                                           
+                                            [...]                                          
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                            <a target="_blank" href="{{LINK_9}}">DarkPlaces</a>                                     
+------------------------------------------------------------------------------------------ 
+                                                                                           
+             DarkPlaces engine was started because I was unsatisfied with                  
+             the other engines available soon after the quake source release               
+             (which did little more than add some flashy effects), and                     
+             craved modding features for my DarkPlaces mod, and wanted some real           
+             enhancements to the online gaming experience as well.                         
+                                                                                           
+             DarkPlaces engine is the result, I hope everyone likes it.                    
+                                                                                           
+             Graphics features                                                             
+                                                                                           
+               * Redesigned effects including smoke, blood, bubbles and explosions.        
+               * Better looking dynamic lights.                                            
+               * External texture support (see Replacement Content section below)          
+               * Realtime bumpmapped lighting/shadowing support                            
+               * .rtlights file support                                                    
+               * .rtlights file editing (see r_editlights_help in game)                    
+               * Alpha blended sprites (instead of glquake's masked sprites).              
+               * Interpolated entity movement and animations (both models and sprites).    
+                                                                                           
+                                            [...]                                          
+                                                                                           
+             Tech Notes                                                                    
+                                                                                           
+             These are notes about the technology in DarkPlaces engine, not really a       
+             blog, more a spillage of techniques and ideas that may be of interest to      
+             engine programmers, and may also answer some questions about how the          
+             engine works for those who are interested.                                    
+                                                                                           
+                                            [...]                                          
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                          <a target="_blank" href="{{LINK_10}}">Xonotic</a>                                          
+------------------------------------------------------------------------------------------ 
+                                                                                           
+                                         (<a target="_blank" href="{{LINK_11}}">montage</a>)                                         
+                                                                                           
+   <a target="_blank" href="{{LINK_14}}">#include "quakedef.h"</a>                                                                   
+   #include "cl_collision.h"                                                               
+                                                                                           
+   #ifdef COLLISION_STUPID_TRACE_ENDPOS_IN_SOLID_WORKAROUND                                
+   float CL_SelectTraceLine(const vec3_t start, const vec3_t pEnd, vec3_t impact,          
+        vec3_t normal, int *hitent, entity_render_t *ignoreent)                            
+   #else                                                                                   
+   float CL_SelectTraceLine(const vec3_t start, const vec3_t end, vec3_t impact,           
+        vec3_t normal, int *hitent, entity_render_t *ignoreent)                            
+   #endif                                                                                  
+   {                                                                                       
+          float maxfrac, maxrealfrac;                                                      
+          int n;                                                                           
+                                                                                           
+                                                                                           
+                             ``                                ``                          
+                          ```.```                            ```.```                       
+                         ``.,,,.`                            `.,,,.``                      
+                       ``.,,::,.`                            `.,::,,.``                    
+                      ``.,::`,:.`                            `.:,`::,.``                   
+                    ``.,,:.`::,.`                            `.,::`.:,,.``                 
+                   ``.,::`::,..`                              `..,::`::,.``                
+                  ``.,:,`::,.``                                ``.,::`,:,.``               
+                 ``.,:``::,.`                                    `.,::``:,.``              
+                ``,::``::,.`                                      `.,::``::,``             
+               ``,::``::,.`                                        `.,::``::,``            
+              ``.:;``;:.``                                          ``.:;``;:.``           
+              `.,:``;:,.`                                            `.,:;``:,.`           
+             `.,:``.:,.`                               ```     `      `.,:.``:,.`          
+            `.,:```:,.`                             ```...````..````   `.,:```:,.`         
+           ``,:,``;:.`                           ```.,,:::,,,,,,,,,.`````.:;``,:,``        
+            `.:;``.:,``                         ```.,::;;;;;;;;;;;;::,.```.,:.``;:.`       
+          `.,:`;`:,.`                         ``.,:;;:,,;,';,,,,,,,;;:.```.,:`;`:,.`       
+         ``,:,``.:,``                       ``.,:;',,+####,;######+,,;:,```,:.``,:,``      
+         `.,;`#`:,.`                      ``.,:;;,,#################;,;:.``.,:`#`;,.`      
+         `,:`,..:,`                      ``.,:;,,##################';:,:,```,:..,`:,`      
+        `.,;`#`;,.`                     `.,:;;,'####:,,+#######',,,:;;::,```.,;`#`;,.`     
+        `,:`,#`:,``                   ``.,:;,,####,,'++,#####',:';;::::,.` ``,:`#,`:,`     
+       `.,;`#.,:.`                   `.,:;;,######:,:,,+####,:';;:,,,...`   `.:,.#`;,.`    
+       `.:,.#.;,.`                  `.,:;:,################,''';:,,..```    `.,;.#.,:.`    
+      ``,:.##.:,.`                ``.,;':'################;:+'';;::,,.``    `.,:.##.:,``   
+      `.,;.++.:,`                ``.:;;:##################:+++'''';;:,.`     `,:.++.;,.`   
+      `.:.,+:,:.`               `.,:;::###################::::::::::::,`     `.:,:+,.:.`   
+      `,:.++.::.`              `.,:;:;############################':::,`     `.::.++.:,`   
+     `.,:.++.;,.`            ``.,;':+###########################::;;;:.`     `.,;.++.:,.`  
+     `.,:.++.;,.`           ``.:;;:###########################::';::,.``     `.,;.++.:,.`  
+     `.:,:++,:,.`          ``,:;::##########################+:';:,,.``       `.,:,++:,:.`  
+     `,:,+++,:,.`         `.,:;:;##########################::;:,..``         `.,:,+++,:,`  
+     `,:,+++,:,.         `.,:;:+##########################:;;:,.``            .,:,+++,:,`  
+     `,:,+++,:,.`      ``.,;':#####':####################:;;:.``             `.,:,+++,:,`  
+    `.,;,+++,:,.`     ``.:;;:####;::####################;;;,.``              `.,:,+++,;,.` 
+    `.,;,+++,;,.`    ``,:;;:###;:':####################+:;:.`                `.,;,+++,;,.` 
+    `.,;,+++,;,.`   `.,:;:;##::'+:#####################:':.`                 `.,;,+++,;,.` 
+    `.,;,+++,::.`  `.,:;;+#;;+++;+####################';;,``                 `.::,+++,;,.` 
+    `.,;,+++,::.```.,;';+;;++++;'#####################;;:.`                  `.::,+++,;,.` 
+    `.,;,+++',:,``.,;;;;;''''+;'##''##################;;,`                   `,:,'+++,;,.` 
+    `.,;,++++,:,.`.:;;;;;;;'';'#';;##################'':.`                  `.,:,++++,;,.` 
+    `.,;,++++,;,.`.,;;::,:;';;;;'+;##################;':.`                  `.,;,++++,;,.` 
+    ``,:,++++,::.`..,,,..,;;;;''+''##################;':.`                  `.::,++++,:,`` 
+      `,:,+++++,:,.``.```.,:;;;;'';###################;':.`                 ``,:,+++++,:,` 
+      `,:,'++++,;,.```   `.,::::;';###################;':.`                 `.,;,++++',:,` 
+      `.:,:++++,,:,``    ``....,;''###################'':.`                 `,:,,++++:,:.` 
+      `.,:,+++++,:,.`      ```.,;;#####################;;,.`               `.,:,+++++,:,.` 
+      `.,;,+++++,::,`        `.:;;#####################;':.`               `,::,+++++,;,.` 
+       `,:,++++++,:,.`       `,:''######################';:.`             `.,:,++++++,:,`  
+       `.:,:+++++,,:,``     `.:;'#######################'';,.``          ``,:,,+++++:,:.`  
+       `.,;,++++++,;:.`    `.,;''@@@@@@@@@@@@@@@@@@@@@@@@'';:,.```      ``.:;,++++++,;,.`  
+       ``,:,######;,:,.````.,:''@@@@@@@@@@@@@@@@@@@@@@@@@@'';:,,..```````.,:,;######,:,``  
+        `.::,######,::,....,:''@@@@@@@@@@@@@@@@@@@@@@@@@@@@+'';;:,,,,....,::,######,::.`   
+        `.,:,#######,;:,,::;''#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'''';;;;:::::;,#######,:,.`   
+         `,:,:######+,;;;;'''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#'''''''';;,+######:,:,`    
+         `.,;,#######:,;'''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#''',:#######,;,.`    
+         ``,:,:#######,,'''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@''',,#######:,:,``    
+          `.,:,########,,'''@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@''',,########,:,.`     
+          ``,::,########:,'''+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+''',:########,::,``     
+           `.,:,'########;,;'+'@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'+';,;########',:,.`      
+            `.:;,##########,,''++@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@++'',,##########,;:.`       
+            ``,::,##########,,''+++@@@@@@@@@@@@@@@@@@@@@@@@@@+++'',,##########,::,``       
+             `.,:,,##########+,,''+++#@@@@@@@@@@@@@@@@@@@@#+++'',,+##########,,:,.`        
+              `.,:,:###########;,,'''+++#@@@@@@@@@@@@@@#+++''',,;###########:,:,.`         
+              ``.,;,'############;,,:'''+++@@@@@@@@@@+++''':,,;############',;,.``         
+               ``.:;,;##############,,,,''++@@@@@@@@++'',,,,##############;,;:.``          
+                ``,:;,:################:,,;++@@@@@@++;,,:################:,;:,``           
+                 ``,:;,,##################,'+#@@@@#+',##################,,;:,``            
+                  ``.,:..@@@@@@@@@@@@@@@@@:.'+@@@@+'.:@@@@@@@@@@@@@@@@@..:,.``             
+                   ``.,::.+@@@@@@@@@@@@@@@@.'+#@@#+'.@@@@@@@@@@@@@@@@+.::,.``              
+                    ``.,:;..@@@@@@@@@@@@@@@,.'+@@+'.,@@@@@@@@@@@@@@@..;:,.``               
+                      `.,::,.:@@@@@@@@@@@@@@.'#@@#'.@@@@@@@@@@@@@@:.,::,.`                 
+                       ``.,::..:@@@@@@@@@@@@,.'##'.,@@@@@@@@@@@@:..::,.``                  
+                        ``.,,:;...@@@@@@@@@@@.'##'.@@@@@@@@@@@...;:,,.``                   
+                          ``.,,::,..,@@@@@@@@:.''.:@@@@@@@@,..,::,,.``                     
+                           ```.,,::;.```:#@@@@`..`@@@@#:```.;::,,.```                      
+                             ```..,,::;:.``````````````.:;::,,..```                        
+                                ```..,,,:::::;;;;;;:::::,,,..```                           
+                                  ````...,,,,,,,,,,,,,,...````                             
+                                      ``````........``````                                 
+                                           ``````````                                      
+                                                                                           
+     bash-3.2$ git clone git://git.xonotic.org/xonotic/xonotic.git                         
+     bash-3.2$ cd xonotic/                                                                 
+     bash-3.2$ ./all update -l best                                                        
+     [...]                                                                                 
+     bash-3.2$ ./all compile                                                               
+     [...]                                                                                 
+     bash-3.2$ ./all run -developer                                                        
+     Found main repo = git://de.git.xonotic.org/xonotic/                                   
+     Repository . enabled because it already exists                                        
+     Repository data/xonotic-data.pk3dir enabled because it already exists                 
+     Repository data/xonotic-music.pk3dir enabled because it already exists                
+     Repository data/xonotic-nexcompat.pk3dir disabled by default, create data/xonotic-... 
+     Repository darkplaces enabled because it already exists                               
+     Repository netradiant enabled because it already exists                               
+     Repository div0-gittools disabled by default, create div0-gittools.yes to enable      
+     Repository d0_blind_id enabled because it already exists                              
+     Repository data/xonotic-maps.pk3dir enabled because it already exists                 
+     Repository mediasource disabled by default, create mediasource.yes to enable          
+     Repository fteqcc enabled because it already exists                                   
+     Repository gmqcc enabled because it already exists                                    
+     Repository xonstat disabled by default, create xonstat.yes to enable                  
+     Repository xonstatdb disabled by default, create xonstatdb.yes to enable              
+     Console initialized.                                                                  
+     Trying to load library... "libz.dylib" - loaded.                                      
+     Game is Xonotic using base gamedir data                                               
+     Xonotic Mac OS X 09:50:28 Mar 16 2013 xonotic-v0.6.0-182-g97eea25 debug               
+     userdir 0 =  (writable)                                                               
+     userdir 1 = /Users/petethomas/.xonotic/ (writable)                                    
+     userdir 2 (not applicable)                                                            
+     userdir 3 = /Users/petethomas/Library/Application Support/xonotic/ (writable)         
+     userdir 3 is the winner                                                               
+     Added packfile data/afterslime-b0e408887b9003812a58af1562e77dc05d351386-6e767...      
+                                                                                           
+     GLSL shader glsl/default.glsl lightdirection diffuse colormapping specular skeletal.. 
+     loaded 6 waypoint links from maps/g-23.waypoints.hardwired                            
+     models/player/ignis.iqm uses 9 1                                                      
+     restoring mouse acceleration to: 0.687500                                             
+                                                                                           

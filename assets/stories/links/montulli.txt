@@ -1,0 +1,8 @@
+LINK_1 = http://www.w3.org/People/Raggett/book4/ch02.html
+LINK_2 = http://en.wikipedia.org/wiki/Lou_Montulli
+LINK_3 = http://montulli.org
+LINK_4 = http://whereismydiskspace.com/
+LINK_5 = https://groups.google.com/group/alt.gopher/msg/b551f9faff85324c?dmode=source&amp;output=gplain&amp;noredirect&amp;pli=1
+LINK_6 = http://lynx.isc.org/release/lynx2-8-7/WWW/Library/Implementation/HTNews.c
+LINK_7 = http://www.fdisk.com/doslynx/bobcat.htm
+LINK_8 = http://webcache.googleusercontent.com/search?q=cache:u0AqOkVrNSEJ:leb.net/blinux/blynx/&amp;hl=en&amp;gl=us&amp;strip=1

@@ -1,0 +1,541 @@
+-<a class="wingz_" id="wingz_1"></a>----------------------------------------------------------------------------------------- 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="wingz_" id="wingz_2" target="_blank" href="{{LINK_1}}">Wingz</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+------------------------------------------------------------------------------------------ 
+                                                                                           
+     RDBMS Workshop: Informix                                                              
+     Moderator: Luanne Johnson                                                             
+     Recorded: June 12, 2007 Mountain View, California                                     
+                                                                                           
+     Luanne Johnson   Moderator                                                            
+     Nick Baxter      Informix                                                             
+     Robert MacDonald Informix                                                             
+     Roger Sippl      Informix                                                             
+                                                                                           
+                    ...                                                                    
+                                                                                           
+                    Johnson:   And then you became Informix and you went through that      
+                               situation where there was an <a class="wingz_" id="wingz_3" target="_blank" href="{{LINK_2}}">acquisition of a company</a>       
+                               <a class="wingz_" id="wingz_4" target="_blank" href="{{LINK_2}}">back in Kansas</a>.                                             
+                                                                                           
+                    Sippl:     Yes, we did.                                                
+                                                                                           
+                    MacDonald: Twenty years ago.                                           
+                                                                                           
+                    Sippl:     Twenty years ago?                                           
+                                                                                           
+                    MacDonald: Yes, wasn’t it 1987?                                        
+                                                                                           
+                    Baxter:    1988-1989.                                                  
+                                                                                           
+                    MacDonald: I came back in 1988 to the company and you had done         
+                               the deal early that year.                                   
+                                                                                           
+                    Sippl:     ...Microsoft did not quite own the office automation        
+                               software market back then. There was WordPerfect.           
+                               There was Lotus. And there was a set of products under      
+                               UNIX...if we owned a suite of office automation             
+                               software, then we could basically have those products       
+                               modified so that they stored their files into our           
+                               database system...after <a class="wingz_" id="wingz_5" target="_blank" href="{{LINK_18}}">I bought this company</a>, I            
+                               realized the whole gravity of the company we had bought     
+                               was all about <span class="hl">bringing this graphical spreadsheet to</span>        
+                               <span class="hl">market before the Windows version of Excel got to</span>           
+                               <span class="hl">market...It was a beautiful product.</span> It had great           
+                               graphics, and you could spin these 3D bar charts around     
+                               in the sky, it was all sort of slick.                       
+                                                                                           
+                            ;;:;;;'''';;'                                                  
+                         ,;;;;;;''''''''';'                                                
+                       ;:,:;;;;;''''''''+''+:                                              
+                      ;,:;;:::;''''''''''+++++.                                            
+                     ::,:::;;'''''''''''''+##++`                                           
+                    ':::;;';;'''''''';;::::'+#+'+                                          
+                   ':::;;;;''''''';;:,,,,,,:+###++                                         
+                  .';;;;,,;;';;;;:,,,...,,,,;+##+''                                        
+                  +'''',..,:::,,,.......,,,,:+++'''                                        
+                  +''+,..,,,,,,...........,,,''''';+                                       
+                  +'+',,.,,,,,............,,,:+'''''                                       
+                 `+++;,,..,,,,,............,,,'''''+                                       
+                 :#+':,,,,,,,,,............,,,:''''+                                       
+                 '#+;,,,,,,,,,,.............,,,;'+++                                       
+                 +#+:,,,,,,,,,,,............,,,:'+++                                       
+                 +++:::,,,,,,,,,............,.,:;+++                                       
+                 +++::::,,,,,,................,:;'+'                                       
+                 :++;:::,,,,,.................,:;''+`                                      
+                  +#;::,,,,,,,................,,;++''                                      
+                  +#':,,,,,,,,,.....,,::,,,...,,;++:,:                                     
+                  +#+,,:;:;;:,,,...,:;'':,,.,...,'+,,:                                     
+                   #+,,;''++';:,..,::;;;::,....,,;;..,       <a class="wingz_" id="wingz_6" target="_blank" href="{{LINK_3}}">Michael</a> <a class="wingz_" id="wingz_7" target="_blank" href="{{LINK_4}}">Brown</a>                 
+                   `+,:';;;'''':...:;;;++'',...,,:,..,        co-founder & CEO             
+                    ',:;'+##+'+;...,::,:,.,,..,,,,,..,        Innovative Software          
+                    ;,;;+;;::'+;,...,,,,.......,,,,..,                                     
+                    :,:;;:,,,;';,.....,,.......,,,.,.,                                     
+                    :,,,,,,,:;':,..............,,,.,.,        Acquired by Informix, 1988   
+                    ,:,,...,,;':,...............,,...,          $30MM/300emp at purchase   
+                    ,::,....,;;:,..........`....,,...,                                     
+                    ,;,,,,,,:;::,.....,:,.......,,...;                                     
+                     :::::,,:;;;:,,:,..,:,......,,..,                                      
+                     :::::,:;''+';,.....::,,.,..,,,:.                                      
+                      :;;:::;'''';,.....,::,,....,;                                        
+                      :;';:;'''';:,......,,,,...,,;                                        
+                      :;';;'''';:,,...,,,:,,,....,:                                        
+                      ,;;;'''''';::,,,,:'';,,....,,                                        
+                      `;;:;++#+;:,.```..:.:,....,,`                                        
+                       ;;::''++';::,,,::..,:...,,,,                                        
+                       :;;,;''';;:,,,.....,,...,,,+`                                       
+                       .;;::;'';:::,..........,,,,#@                                       
+                        ;';::''';::,,,......,.,,,.'@`                                      
+                        ';';:;';;::,,.........,,,.:+++                                     
+                        .';'::;;;::,,........,,,,.,#++'                                    
+                          ';;,,:::,,.......,,,,,..`#++'                                    
+                          `';:,:,,,,......,,,,.... ;##++                                   
+                           ,';::::,,.....,,,,.,,.` `:#++'                                  
+                            ;'';;;:,,,,,,:,,,..,. ``.,'+++                                 
+                            ,;''''';;;;;:,,,.,,.`   .:'++++                                
+                            ,,;'''''''';:,,..,.`    .;++++++`                              
+                            `.;;'''''';;:,,.,.`    `,'++++++''                             
+                           '+`:;'''''';;:,,..`     `:+++++++++                             
+                          ;#+`.:;''''';::,,.`      .'++++++++#                             
+                         ''#+ ..;;;;;::::,,`      `:+++++++++#                             
+                        ';'#'`..,;;;:,,,:,`       `'+++++++++#                             
+                                                                                           
+                    Baxter:    Light sources, 3D light sources, remember?                  
+                                                                                           
+                    Sippl:     3D light sources, so you could get the shadows on the       
+                               bars the way you want. <a class="wingz_" id="wingz_8" target="_blank" href="{{LINK_5}}">It was just gorgeous</a>. And these      
+                               guys that we bought had booths at these <a class="wingz_" id="wingz_9" target="_blank" href="{{LINK_14}}">trade shows</a>         
+                               that looked like spaceships.                                
+                                                                                           
+                    Baxter:    With <a class="wingz_" id="wingz_10" target="_blank" href="{{LINK_6}}">Leonard Nimoy</a>.                                         
+                                                                                           
+                    Sippl:     They had <a class="wingz_" id="wingz_11" target="_blank" href="{{LINK_7}}">Leonard Nimoy</a>.                                     
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                       A <a class="wingz_" id="wingz_12" target="_blank" href="{{LINK_8}}">brush with greatness</a>                              
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         "Steven Jobs, who founded Next after leaving Apple Computer, said the <a class="wingz_" id="wingz_13" target="_blank" href="{{LINK_16}}">Wingz</a>       
+         graphic spreadsheet program from Informix Software Inc. and the completion of     
+         Next's 1.0 operating system fill two big gaps in the company's line of business   
+         products."                                                                        
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                     "<a class="wingz_" id="wingz_14" target="_blank" href="{{LINK_9}}">The Informix and Innovative Software Merger Nightmare</a>"               
+------------------------------------------------------------------------------------------ 
+                                                                                           
+        "<span class="hl">The merger was a complete clash of cultures</span> and a source of friction              
+         as executives from both organizations served their different agendas.             
+         As a result, two separate companies were running under the Informix               
+         name, a technology-driven UNIX company in Silicon Valley and a PC-focused         
+         retail publisher in the farm belt. One former Informix vice president said,       
+         <span class="hl">'There was a big rift between Lenexa and Menlo Park. You had people in</span>            
+         <span class="hl">Lenexa who thought the people in Menlo Park were strange because they were</span>        
+         <span class="hl">Californians. And there were people in California who thought the people in</span>       
+         <span class="hl">Kansas were country bumpkins.'</span>"                                                   
+                                                                                           
+                                 `...``.```                                                
+                               '@@@@@@@@@@@@@@@@@@;                                        
+                             '@@@@@@@@@@@@@@@@@@@@@@#                                      
+                           ,@@@@@@@@@@@###+#@@#@@@@@@@'                                    
+                          ;@@@@@@@@@@##+++++++++####@@@#                                   
+                         +@@@@@@@@@#++++++++''+++++++#@@#                                  
+                        +@@@@@@@@@#+++'''''''''''''''++@@                                  
+                       ;@@@@@@@@@@+++'''''''''''''''''++@                                  
+                      `@@@@@@@@@#+++''+'+'''';;;;';;''''#@@                                
+                      @@@@@@@@@@+''''''''';;;;;;;;;;''''+#@                                
+                     '@@@@@@@@@@+''''';';;;;::::;;;;;;'''+#                                
+                     @@@@@@@@@@@+'';;';;;;;;::::::::;;;;''+                                
+                    '@@@@@@@@@@@+;;;;;;;;;;:::::::::::;;;'+,                               
+                  :,@@@@@@@@@@@+;;;;;;;;;;;;;:::::::::;;;''+                               
+                  :'@@@@@@@@@@@+;;;;;;;;;;;;;;:::::::::;;;''+                              
+                  :#@@@@@@@@@@@+;;;;'';;;;;;;:;:::::::::;;''+                              
+                 :;@@@@@@@@@@@#;;;;'''''';;:::::;:::::::;;;'+;                             
+                 @';''#@@@@@@@';;;'''++#+';::::::;;::::;;;;'+@                             
+                 ;;;';;@@@@@@+'';''++++##'#'':,,,:;;:::;;;''+@                             
+                ;:;';;;;@@@@@+'''++'';';;'@@+':,,,::::;;;'''#@                             
+                ::+':,;:@@@@@'#''++';;;:::;'##':,,,::::;;;'+#@                             
+                :;#;,:;;@@@@+'+'+'';;;::::::;;'':,,:::::;;;'#@                             
+                :';,:;;;+@@@++++';;;;'#+'''':::;:,,,::,:::;;+@                             
+                ;':::;:;+@@#+'+';;;'+@+@@@#++:::::,:,:,:::;;+@@                            
+                ':;:,;:+#@++''+';;;'#+@@+@,++':;::,::::;''+#+@@                            
+                ';;:;';'@@+''++;;;;;;;''##::'';;::::;;;''#@@@@@`                           
+                '';;;':'@#+''+';;::;;;::;;'+';';;:::;'''''#@@@@                            
+                +;';;;;'@#+''''';::;;;;;:;;'';'';;:;+@#'';;;#@#                            
+              '++'+';';+@#+''+'';;;;;;';;;;'++''';;;@#'''';;'@,                            
+               #@'';#':@@#+++''';;;:;;;;;;;;''''';;'@;@@@##''@                             
+               @@'':;;;@@#+++''';;::::;;;;:;;''';''++#@'@;@@+#                             
+               @@@';;';@@++++''';;:::::::::;'''''''+@''+#+@@@,                             
+               #@@''+'#@#+++''';;;:,,:::::,:;''''''#@';;;+@@+                              
+               ;@@'';+@@#+++';';;::,,::::,:'+'';;;;+@';;;;'@'                              
+               `@@@+';@##'+';;';;:::::;:::;+++';;;;'@'';''+#'                              
+                #@#+;;@@+''';;;;::::::::::';;;';';;'@''''''+:                              
+                @@#'';@#''';;;;;;:;;;::::;'';;:::::;#;';''+#                               
+                @@+';'@#+'';;;;;:;;:;;;;;;;':+@':::;@;;;;'+@                               
+               ,@@+';+@+''';;;;::;;:::;;;;;'';'#;;;+@':;;;'#                               
+               +@@++;+@+'';;;;;::;;;;::;;;;;;';'''+'#';;;'';                               
+              +@@@+'''@+'';;;;;::;;';;::::;::;;''+@@+';;;'+                                
+            '@@@;@''''@#+'';;;:::;:@@#+;:::::;;;;'@@+';;;'@                                
+    .,,,..'@@@@#'@''''@@++';;;::;::'@#++#':::;';;'#@@+';;';                                
+;+@@@@@@@@@@@@@::@+'+'@@#+';;;;:;;:;#@',,:''';;;;'+@@+'';#     <a class="wingz_" id="wingz_15" target="_blank" href="{{LINK_10}}">Mark</a> <a class="wingz_" id="wingz_16" target="_blank" href="{{LINK_11}}">Callegari</a>              
+@@@@@@@@@@@@@@@,,@+'''@@@+';;;;:;;::'##':..,;+##';'#@++''#                                 
+@@@@@@@@@@@@@@@..@'''+@@@#+';;;;;;;;;;++#+:...;'@@@@+'+:+       Co-founder & programmer    
+@@@@@@@@@@@@@@@.`'''''+@@##''';;;;;:;:;;;'##;,,:@@@#'';;#       Innovative Software        
+@@@@@@@@@@@@@@@..:+'''+#@@@+'';;;;;:;;;;:;+'#@@@@@#;;;:#                                   
+@@@@@@@@@@@@@@@..`#';''##@@#+'';;;;;:;;;;;;'$++@@@@''::'                                   
+@@@@@@@@@@@@@@@.. ';';'++#@@+++'';;;;:;;';''''+#@+';:'`                                    
+@@@@@@@@@@@@@@@..`.'';'''++@@++'';;;;;;;;;'''''@#';:'`                                     
+@@@@@@@@@@@@@@@.```';;'''''+@##+';;'''';''''''@@+';'                                       
+@@@@@@@@@@@@@@@,```,;;';''''+@#++;:;;';;;''++'+++'+                                        
+@@@@@@@@@@@@@@@:````';;;';';+#@#++;::::;;;'+#'+++#                                         
+@@@@@@@@@@@@@@@#``` ,;;;;;;;'+@@+++;;::;;;;'@+##@                                          
+@@@@@@@@@@@@@@@@```` ;;;;;;;;'+#@+#+'';;;;''#++@                                           
+@@@@@@@@@@@@@@@@`````.;;;;;;;;''#@@@@#+'';''++@+                                           
+@@@@@@@@@@@@@@@@````` :;;;::;;;;'+#@@@@@@####@@                                            
+@@@@@@@@@@@@@@@@.``  ` ;;;;;:;:;;'''#@@@@@@@@@+                                            
+@@@@@@@@@@@@@@@@:``    `;:;;::::::;;'+@@@@@@@@                                             
+@@@@@@@@@@@@@@@@'`      ,:;;;:::::;;;+@@@@@@@@                                             
+@@@@@@@@@@@@@@@@@        ::;;;;::::;'#@@:@@@@,                                             
+#@@@@@@@@@@@@@@@@`      ` ::;;;;:::;'@@;'@@@@                                              
+#@@@@@@@@@@@@@@@@`        `;:;;;::;'@#:.@@@@@                                              
+#@@@@@@@@@@@@@@@@,`        .;:;:;;'@#,.@@@@@@ ,'#:                                         
+#@@@@@@@@@@@@@@@@:``        ,;;;'+##,.;@@@@@@@@@@@`                                        
+#@@@@@@@@@@@@@@@@'``         ;;;;'+..;@@@@@@@@@@@@@.                                       
+#@@@@@@@@@@@@@@@@#```        `:::.`,:;@@@@@@@@@@@@@@:                                      
+#@@@@@@@@@@@@@@@@@ ``        ` ``.,,::@@@@@@@@@@@@@@@'                                     
+#@@@@@@@@@@@@@@@@@ ```     .#++.`..,;,@@@@@@@@@@@@@@@@#                                    
+#@@@@@@@@@@@@@@@@@````    :@@#@#`..;.:@@@@@@@@@@@@@@@@@@.                                  
+#@@@@@@@@@@@@@@@@@.```  `#@@@++#,.:;`:@@@@@@@@@@@@@@@@@@@:                                 
+#@@@@@@@@@@@@@@@@@,``` ,@@@@';';@,;:`;@@@@@@@@@@@@@@@@@@@@;                                
+#@@@@@@@@@@@@@@@@@'```+;;:'#''@#@:',`'@@@@@@@@@@@@@@@@@@@@@#                               
+#@@@@@@@@@@@@@@@@@#`.`'@@@@#;@'@.:;,`#@@@@@@@@@@@@@@@@@@@@@@+                              
++@@@@@@@@@@@@@@@@@@` ``@@@''@+@+`::,`@@@@@@@@@@@@@@@@@@@@@@@@`                             
++@@@@@@@@@@@@@@@@@@ `  #@++#@@@ `::.`@@@@@@@@@@@@@@@@@@@@@@@@@                             
++@@@@@@@@@@@@@@@@@@``  ;@';#@@:``:...@@@@@@@@@@@@@@@@@@@@@@@@@`                            
++@@@@@@@@@@@@@@@@@@``  ;@@'#@@` `:...@@@@@@@@@@@@@@@@@@@@@@@@@;                            
+'##################`  `######:. `,``:#####################+';.                             
+'##################`  `######:. `,``:#####################+';.                             
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                      <a class="wingz_" id="wingz_17" target="_blank" href="{{LINK_17}}">Linux shareware release</a>                              
+------------------------------------------------------------------------------------------ 
+                                                                                           
+From: p...@iisc.co.uk                                                                      
+Subject: SHAREWARE: Wingz for Linux                                                        
+Date: 1995/10/12                                                                           
+Message-ID: &lt;cola-liw-813528127-25123-1@oravannahka.helsinki.fi&gt;#1/1                       
+X-Deja-AN: 117442790                                                                       
+approved: linux-annou...@news.ornl.gov (Lars Wirzenius)                                    
+followup-to: comp.os.linux.development.apps                                                
+content-type: text/plain; charset=ISO-8859-1                                               
+organization: ?                                                                            
+mime-version: 1.0                                                                          
+newsgroups: comp.os.linux.announce                                                         
+                                                                                           
+-----BEGIN PGP SIGNED MESSAGE-----                                                         
+                                                                                           
+                                                                                           
+                *****************************************                                  
+                WINGZ SPREADSHEET NOW AVAILABLE FOR LINUX                                  
+                *****************************************                                  
+                                                                                           
+Wingz 1.4.1d for Linux has been uploaded to the pub/Linux/Incoming                         
+directory at sunsite.unc.edu. It is also available from                                    
+ftp://www.wingz.com/pub (see our WWW site: http://www.wingz.com).                          
+                                                                                           
+Wingz is the award-winning spreadsheet available for Apple Macintosh,                      
+MS-Windows, and various Unix X-Windows platforms. Launched by Informix                     
+Software, Wingz is now available exclusively from Investment                               
+Intelligence Systems Corporation (IISC). It combines standard                              
+spreadsheet functionality with advanced business charting and                              
+reporting features. A powerful but easy to learn event-driven                              
+scripting language, HyperScript, enables the construction of powerful                      
+applications employing graphical objects such as buttons, sliders,                         
+dialogs, number wheels and the like. Script files may be saved for                         
+reuse in multiple applications.                                                            
+                                                                                           
+Wingz has over 140 built-in functions, a worksheet size of 32k by 32k                      
+cells, 20 predefined 2-D and 3-D chart types, multi-font text and                          
+graphics image importing. Worksheets and script files are portable                         
+between all supported platforms, allowing development and deployment                       
+on the most suitable hardware.                                                             
+                                                                                           
+Wingz for Linux is being released as shareware, with the same power                        
+and functionality as its commercial stablemates on other platforms. It                     
+is available on the Sunsite Linux archives and directly from                               
+ftp.wingz.com, in the /pub directory.                                                      
+                                                                                           
+For information on the commercial versions of Wingz, email                                 
+wingz-i...@wingz.com or see http://www.wingz.com.                                          
+                                                                                           
+                                                                                           
+*************************************************************************                  
+*   Phil Shotton          |   WingZ/HyperScript Tools Development Team  *                  
+* Director of Development | Investment Intelligence Systems Corporation *                  
+*     p...@wingz.com      |     London, England. +44 (0)171 628 6960    *                  
+*************************************************************************                  
+                                                                                           
+The lsm follows:                                                                           
+                                                                                           
+Begin3                                                                                     
+Title:          Wingz                                                                      
+Version:        1.4.1d                                                                     
+Entered-date:   29SEP95                                                                    
+Description:    Graphical Spreadsheet                                                      
+Keywords:       Spreadsheet, Data Analysis, Charting, X/Motif                              
+Author:         stu...@wingz.com                                                           
+Maintained-by:                                                                             
+Primary-site:   sunsite.unc.edu /pub/Linux/X11/xapps                                       
+                1.3 M <a class="wingz_" target="_blank" href="{{LINK_12}}">Wingz-141d.tgz</a>                                                       
+                471   Wingz-141d.lsm                                                       
+Alternate-site: ftp.wingz.com /pub                                                         
+                1.3 M Wingz-141d.tgz                                                       
+                471   Wingz-141d.lsm                                                       
+Original-site:                                                                             
+Platforms:                                                                                 
+Copying-policy: Shareware                                                                  
+End                                                                                        
+                                                                                           
+                                                                                           
+                                                                                           
+-----BEGIN PGP SIGNATURE-----                                                              
+Version: 2.6.2i                                                                            
+                                                                                           
+iQCVAwUBMHwrC4QRll5MupLRAQEl6gP9Gy1/FQ/v5McYIYZt0dZO5ZP6XVtcleuE                           
+4y4YhoRvf0zkWSarFR6joV4+vczrjuUjTyO9NISp3dFHjgxQcFjlhZlzC3VwtuYR                           
+XUSmW3Sd967tLJb8UmB+cyBfOM/lOSbHfARnVFoaNG0tU3yAVsrhk8HoBnhgo7m1                           
+nKXU2qZyN7U=                                                                               
+=9Qag                                                                                      
+-----END PGP SIGNATURE-----                                                                
+                                                                                           
+                                                                                           
+          ';'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''';;       
+          ':'+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''';:       
+          :;,:',;;::;;::;',:;,';;::;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       
+          ';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;       
+          ';;::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;':,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       
+Excel     :,,,,,,,,.,..,,,,,:,,:.:,::::::,:,,,,,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       
+max size  ;::,:.:,,.,,`` ,:,,:::,:::::;:;,:,::::,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,       
+256x16384 ;.,;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::       
+          ;,:::::...:.+##########################################################@,:       
+Wingz     ;`:;:#++++++###########################################################+#:       
+max size  ;::::####################################################################:       
+32768^2   ;':,::###############################'##############################+####:       
+          ;,:::@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####:       
+          ;,: :@@@@@@@@@@@@@@@@@###@@######@@####@@@@######@@@###@@@@@@@@@@@@@@####:       
+          ;::::@@@@@@@@@@@@@@@:;...:.,,,,,.@::,..@:@;,:.,,,;',,::@@@@@@@@@@@@@@####:       
+          ;`:`:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'@@'@@@@@@@@@#@@@@@@@@@@@@@@@@@@@####:       
+          ;,,,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####:in-cell
+          ;,,,,@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@####:edits  
+          ;@; :@;;;;;;;;;;;;;;;;;;;;;;';;;;'''''''''';;;;;;;;;;;;;;;;;;;;;;;;;@####:       
+          ;+:.:@;;;;;;;;;;;;;;;;;;;;';'''''''''';;;;;;;;;;;''''';;;;;;;;;;;;;;@####:       
+          ;   :@;;;;;;;;;;;;;;;;;;;';';''';;;;;;;;;;;'''''''''';;;;;;;;;;;;;;;@####:       
+embedded  ;   :@;;;;;;;;;;;;;;;;;';';';';;;;;;;;';''''''';;;';;;;;;;;;;;;;;;;;@####:       
+3D graphs ;,,,,@;;;;;;;;;;;;;;;;';';';'';;''''''';#;;;;;;;;;'''';;;;;;;;;;;;;;@####:       
+          ;,,:,@;;;;;;;;;;;;;;';';;';';''''''';;;;#;;;;;;''''''';;;;;;;;;;;;;;@####:       
+          ;@: :@;;;;;;;;;;;;';;';';';';..';;;;;;;;#'''''''';';;;;;;;;;;;;;;;;;@####:       
+          :':::#;;;;;;;;;;;;'';;';,,';:.+;::;;''';#';+';;;;;'''';;;;;;;;;;;;;;@####:       
+          ;@@@:#;;;;;;;;;;;;';';';;#;;.+';'#;:''';#;;+';;##''''';;;;;;;;;;;;;;@####:rtime  
+          ;+'':#;;;;;;;;;;;;'';';';#;'.+:#'@:+''';@;;+'''###'''';;;;;;;;;;;;;;@####:update 
+          ;,,,:#;;;;;;;;;;;;';';';;#`:;+:#'@:+;:;+##;+'+#@#@';;;;;;;;;;;;;;;;;@####:       
+          ;,,,:#;;;;;;;;;;;;';;;;';#.'#,,#'+'+:'++@';+'+#@#@'''';;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;'';';':#+'#;+::+'@;'+#;'@'###@##''';;;;;;;;;;;;;;;@####:       
+          :,,,,';;;;;;;;;;;;';';'':''##;#;'@'+;'+#;####@#@##'';;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;';;;;;:+'##;#;;::'@''''+#++@#@#.;;;;;;;;;;;;;;;;;;@####:       
+HyperTalk :,,,,@;;;;;;;;;;;;;';'..:+'##;#;;@#;@''+##@#@@#@:@::;;;''';;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;;';.:'+'##;##;##;#+'#++@#@@@@'':,:;;';;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;',;+;#+'##@#;;##++;;++@@#@@@.+:,::;'';;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;',#':#+'##;;';##'#+#+@++#@@,#';,:;;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;',+':#+;##'#';##'##++#+##@+@';;,:;;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;.,+.:@`;#.'#`;#@'##+##+##@:+;::,;;;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;,,::,,,:,.''`;@`'+`+#;##@.#';;,:';;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;':;::,,,,,,::,,::,.;'.@@,@';::::;;;;;;;;;;;;;;;;;@####:       
+initially :,,,,@;;;;;;;;;;;;'`';.;;:.'',;;::,,,,,,,:,'':,:,;;;';;;;;;;;;;;;;;;@####:       
+buggy     :,,,,@;;;;;;;;;;;;:';.;;:.;'`';,:;'.'':';;:':,:::;;';;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;;;;;;';;;';,:;'`';.:;'.';;;;;;;;;;;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;;;;;;;;;;;;;;;'';;:;;.';;;;;;;;;;;;;;;;;;;;;;;;;;@####:       
+          :,,,,@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@####:       
+missing   :,,,,@;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@####:       
+some math :,,,,@+#@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@####:       
+functions :,,,,# `+::;:,#@@@@@@@@@,;;',;,:@@@@@@@@@@,;;:,:,;@@@@@@@@@@'#:',:,:@####:       
+Excel     :,,,,@@@#@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####:       
+had       :,,,,#..+,:::,#@@@@@@@@@:'@:,:,:@@@@@@@@@@:';.,:,;@@@@@@@@@@+#':,:,:@####:       
+          :,,,,#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####:       
+          :,,,,@###################################################################:       
+          :,,,,#,,,;,,,,+,,:',,,,+:,,#,,,,,#,,,:;,,:+,,,,,#,,,,',,,#,,,,:#:,,,;####:       
+          :,,,,@,:,:,:;,':::'.::,+,:,#.:;;:#,:;::::;+.:::,+,::,':::#.:;:,#,:;,:####:       
+          :,,,,#++'+'++'+++++'++'#++'#'++++#'++++++++'+++'#+++'++++#'+++'#+++'+####:       
+          :,,,,@###################################################################;       
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                             Linux freeware release (March 1999)                           
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         Wingz Professional 3.0 for Linux                                                  
+                                                                                           
+         Investment Intelligence Systems Group (IISG) announced the release of Wingz       
+         and Wingz Professional version 3.0 for Linux as freeware. The Wingz suite is      
+         comprised of three products: Wingz Professional, Wingz and the HyperSheet         
+         Runtime. Wingz Professional is a multi-platform, visual programming               
+         environment allowing developers to create customized graphical applications       
+         for data analysis and presentation. Wide-scale deployment of the standard         
+         programs or custom applications bundled with the HyperSheet Runtime are subject to
+         licensing fees. The products can be freely downloaded from http://sunsite.unc.edu/
+                                                                                           
+         Contact: IISC, 8400 W. 110th St., Suite 305, Overland Park, KS 66210,             
+         Phone: 913-663-4472, Fax: 913-663-4473, E-mail: us-sales@iisckc.com,              
+         URL: http://www.wingz-us.com/.                                                    
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                         Sunsite                                           
+------------------------------------------------------------------------------------------ 
+                                                                                           
+         Begin3                                                                            
+         Title:          Wingz Professional                                                
+         Version:        3.1                                                               
+         Entered-date:   15DEC98                                                           
+         Description:    X-windows Graphical Spreadsheet Development Tool                  
+         Keywords:       Spreadsheet, Data Analysis, Charting, X/Motif,database development
+         Author:         linux@wingz.com                                                   
+         Maintained-by:  linux@wingz.com                                                   
+         Primary-site:   sunsite.unc.edu /pub/Linux/apps/financial/spreadsheet             
+                           6 M <a class="wingz_" target="_blank" href="{{LINK_13}}">Wingzpro-311.tar.gz</a>                                         
+                           6 K Wingzpro-311.lsm                                            
+         Alternate-site: sunsite.unc.edu /pub/Linux/apps/financial/spreadsheet             
+         Original-site:                                                                    
+         Platforms:      Linux, Windows95/98/NT, Solaris, AIX, SunOS, HPUX, IRIX, Mac      
+         Copying-policy: Freeware                                                          
+         End                                                                               
+                                                                                           
+         # uname -a                                                                        
+         Linux kccode 2.0.34 #2 Thu Jul 9 10:57:48 EST 1998 i686 unknown                   
+         # cat /etc/issue.net                                                              
+         Debian GNU%s 2.0 %h                                                               
+         # date                                                                            
+         Sun Mar 17 13:08:46 CST 2013                                                      
+         # pwd                                                                             
+         /root/Wingz3/bin/LINUX                                                            
+         # ldd WingzPro                                                                    
+              libm.so.5 =&gt; /lib/libm.so.5 (0x4000b000)                                     
+              libXpm.so.4 =&gt; /usr/lib/libc5-compat/libXpm.so.4 (0x40014000)                
+              libXmu.so.6 =&gt; /usr/lib/libc5-compat/libXmu.so.6 (0x40022000)                
+              libXext.so.6 =&gt; /usr/lib/libc5-compat/libXext.so.6 (0x40034000)              
+              libXt.so.6 =&gt; /usr/lib/libc5-compat/libXt.so.6 (0x4003f000)                  
+              libX11.so.6 =&gt; /usr/lib/libc5-compat/libX11.so.6 (0x40081000)                
+              libdl.so.1 =&gt; /lib/libdl.so.1 (0x4011f000)                                   
+              libg++.so.27 =&gt; /usr/lib/libc5-compat/libg++.so.27 (0x40122000)              
+              libstdc++.so.27 =&gt; /usr/lib/libc5-compat/libstdc++.so.27 (0x4015a000)        
+              libc.so.5 =&gt; /lib/libc.so.5 (0x4018b000)                                     
+              libSM.so.6 =&gt; /usr/lib/libc5-compay/libSM.so.6 (0x40249000)                  
+              libICE.so.6 =&gt; /usr/lib/libc5-compat/libICE.so.6 (0x40252000)                
+                                                                                           
+------------------------------------------------------------------------------------------ 
+                                         READ.WZ                                           
+------------------------------------------------------------------------------------------ 
+                                                                                           
+/////////////////////////////                                                              
+//      /      //    //    //   Investment Intelligence Systems Corp.                      
+////  /////  ///  ////  /////   Wingz 3.0                                                  
+////  /////  ////   //  /////   http://www.wingz.com                                       
+////  /////  //////  /  /////                                                              
+//      /      /    ///    //   READ.ME                                                    
+/////////////////////////////                                                              
+                                                                                           
+TROUBLESHOOTING SECTION                                                                    
+                                                                                           
+DATABASE ACCESS                                                                            
+                                                                                           
+If you cannot connect to a database in Wingz Professional or                               
+DataLink, you could be encountering a connectivity software                                
+restriction that only allows one application to connect to a                               
+database at a time. Basically, once Wingz Professional or                                  
+DataLink accesses a database, you must log off and exit the                                
+application before accessing a database with another                                       
+application.  If you don't do this prior to the second access,                             
+an error message is displayed indicating that the database or                              
+backend is busy or not found.                                                              
+                                                                                           
+RECOMMENDED RESOURCE SETTINGS WHEN USING Wingz                                             
+                                                                                           
+The following examples show how the appropriate resources would                            
+be set when using the Motif window manager (Mwm).  If instead you                          
+are using the Visual User Environment window manager (Vuewm) then                          
+replace occurrences of Mwm with Vuewm and if you are using the 4DWm                        
+(on an SGI machine) replace occurrences of Mwm with 4DWm.                                  
+                                                                                           
+If you are using Pointer as the keyboard focus policy, define the following                
+resource settings:                                                                         
+                                                                                           
+Mwm*keyboardFocusPolicy:  pointer                                                          
+Mwm*positionOnScreen:  False                                                               
+Mwm*clientAutoPlace:  False                                                                
+Mwm*autoKeyFocus:  False                                                                   
+Mwm*startupKeyFocus:  False                                                                
+Mwm*focusAutoRaise:  False                                                                 
+Mwm*menu*saveUnder:  True                                                                  
+Mwm*positionIsFrame:  True                                                                 
+                                                                                           
+                                                                                           
+If you are using Explicit as the keyboard focus policy, define the following               
+resource settings:                                                                         
+                                                                                           
+Mwm*keyboardFocusPolicy:  explicit                                                         
+Mwm*positionOnScreen:  False                                                               
+Mwm*clientAutoPlace:  False                                                                
+Mwm*autoKeyFocus:  True                                                                    
+                                                                                           
+                               [...]                                                       
+                                                                                           
+OPERATING ENVIRONMENT ANOMALIES                                                            
+                                                                                           
+Wingz clipboard operations are not functional when you are                                 
+running xclipboard.  Exit xclipboard before attempting to perform a cut,                   
+copy, or paste operation in Wingz.                                                         
+                                                                                           
+Wingz is designed to run properly on single-screen X window                                
+servers.  You may experience problems (e.g., window painting problems) when                
+attempting to run Wingz on a simultaneous multiple-screen                                  
+X window server.  In some cases, this can manifest itself as phantom                       
+or duplicated menus and palettes.  In other cases, this might cause                        
+the Wingz menu to appear confused about what the current                                   
+window is.  In other cases, windows might be scattered across multiple                     
+sessions.                                                                                  
+                                                                                           
+You may experience difficulty compiling your external C source code with                   
+some compilers.  The difficulty may be attributed to using an ANSI compiler                
+or calling incorrect or missing libraries.  The external samples                           
+provided are targeted for non-ANSI compilers.  If you are using an ANSI                    
+compiler, note that ANSI versions of the makefiles are included.  These                    
+files display the makefile name and end with an ".ansi" extension.  To run                 
+an ANSI version of the makefile, rename the "makefile.ansi" file to "makefile"             
+before building the sample externals.  The C source code is written to be                  
+rebuilt for either compiler.                                                               
+                                                                                           
+                                                                                           
+HP 700/800 SPECIFIC ANOMALIES                                                              
+                                                                                           
+You may encounter a significant delay when attempting to utilize sound                     
+commands and functions on a machine that does not have sound capabilities.                 
+This could be due to an improperly configured device or the lack of sound                  
+capabilities on a particular machine.  Regardless of the reason, the delay                 
+can be as much as 15 seconds and is the result of various timeouts that                    
+must take place before script execution can continue.                                      
+                                                                                           
+To run <a class="wingz_" id="wingz_18" target="_blank" href="{{LINK_19}}">Wingz</a> in the background, you may need to execute the                                
+command "stty -tostop" in your terminal window prior to launching                          
+the application.                                                                           
+                                                                                           
+                                                                                           
+SUN SPECIFIC ANOMALIES                                                                     
+                                                                                           
+You may see the message:                                                                   
+                                                                                           
+"Can't Load Codeset file 'C' using internal fallback"                                      
+                                                                                           
+when starting up the application.  This is caused when the "Codeset"                       
+file is not found and it is a warning message only.                                        
+                                                                                           
+To stop this warning message copy the file $WINGZ3/etc/Codeset into                        
+the /usr/lib/X11/C directory (which may need creating).                                    
+                                                                                           
+                               [...]                                                       
+                                                                                           

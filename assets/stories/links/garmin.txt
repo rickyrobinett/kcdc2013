@@ -1,0 +1,13 @@
+LINK_1 = http://developer.garmin.com/
+LINK_2 = https://forums.garmin.com/forumdisplay.php?55-Communicator-Plugin-API
+LINK_3 = https://bitbucket.org/schinckel/garmin-plugin/src
+LINK_4 = http://developer.garmin.com/linux/
+LINK_5 = https://github.com/adiesner/GarminPlugin
+LINK_6 = https://code.google.com/p/osm2garmin/#Introduction
+LINK_7 = https://code.google.com/p/garmintools/
+LINK_8 = http://mygarminfone.blogspot.com/2011/05/so-heres-short-how-to-for-compiling.html?m=1
+LINK_9 = http://www.garminasus.com/developer/
+LINK_10 = http://forums.gpsreview.net/viewtopic.php?t=6842
+LINK_11 = http://kccode.net/4/LINK_11.pdf
+LINK_12 = http://kccode.net/4/LINK_12.pdf
+LINK_13 = http://www.linuxfordevices.com/c/a/News/Garmin-Nav-devices-run-Gnome-Linux/

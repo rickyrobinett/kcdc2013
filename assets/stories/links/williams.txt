@@ -1,0 +1,8 @@
+LINK_1 = http://www.paulsprojects.net/tutorials/smt/smt.html
+LINK_2 = http://vimeo.com/12815700
+LINK_3 = http://artis.imag.fr/~Cyril.Soler/DEA/Ombres/Papers/William.Sig78.pdf
+LINK_4 = http://www.paulsprojects.net/tutorials/smt/smt.html
+LINK_5 = http://www.cs.berkeley.edu/~ravir/6160-fall04/papers/shadow_mapping.pdf
+LINK_6 = http://staff.cs.psu.ac.th/iew/cs344-481/p1-williams.pdf
+LINK_7 = http://http.developer.nvidia.com/GPUGems/gpugems_ch12.html
+LINK_8 = http://en.wikipedia.org/wiki/Shadow_mapping
