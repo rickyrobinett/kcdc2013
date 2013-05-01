@@ -3,52 +3,6 @@
   <head>
     <title>kccode.net</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <script type="text/javascript" src="/jquery-1.9.1-min.js"></script>
-    <script type="text/javascript" src="/jquery-scrollTo-patched.js"></script>
-    <script type="text/javascript" src="/js-url.min.js"></script>
-    <script type="text/javascript">
-      var delay = 1200,
-        scrollToRegion  = function (regionId, delay, options) {
-          $('html, body').scrollTo( $('#' + regionId), delay, options );
-          location.hash = regionId;
-        };
-      $("document").ready(function() {
-        $("#corner_to_columbia").click(   function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        $("#corner_to_jeffc").click   (   function (e) { e.preventDefault();scrollToRegion('jeffc',      delay);});
-        $("#corner_to_kc").click      (   function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
-        $("#corner_to_kirks").click   (   function (e) { e.preventDefault();scrollToRegion('kirks',      delay);});
-        $("#corner_to_law").click     (   function (e) { e.preventDefault();scrollToRegion('law',        delay);});
-        $("#corner_to_manhat").click  (   function (e) { e.preventDefault();scrollToRegion('manhat',     delay);});
-        $("#corner_to_stlouis").click (   function (e) { e.preventDefault();scrollToRegion('stlouis',    delay);});
-
-        $("#jeffc_to_columbia").click(    function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        $("#kc_to_columbia").click(       function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        $("#kc_to_jeffc").click(          function (e) { e.preventDefault();scrollToRegion('jeffc',      delay);});
-        $("#columbia_to_kc").click(       function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
-        $("#columbia_to_jeffc").click(    function (e) { e.preventDefault();scrollToRegion('jeffc',      delay);});
-        $("#columbia_to_kirks").click(    function (e) { e.preventDefault();scrollToRegion('kirks',      delay);});
-        $("#columbia_to_stlouis").click(  function (e) { e.preventDefault();scrollToRegion('stlouis',    delay);});
-        $("#kirks_to_columbia").click(    function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        $("#kirks_to_kc").click(          function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
-        $("#kc_to_kirks").click(          function (e) { e.preventDefault();scrollToRegion('kirks',      delay);});
-        $("#kc_to_law").click(            function (e) { e.preventDefault();scrollToRegion('law',        delay);});
-        $("#law_to_manhat").click(        function (e) { e.preventDefault();scrollToRegion('manhat',     delay);});
-        $("#law_to_kc").click(            function (e) { e.preventDefault();scrollToRegion('kc',         delay);});
-        $("#manhat_to_law").click(        function (e) { e.preventDefault();scrollToRegion('law',        delay);});
-        $("#stlou_to_columbia").click(    function (e) { e.preventDefault();scrollToRegion('columbia',   delay);});
-        if ($.url('?fs')) {
-          var fs = $.url('?fs');
-          var mainStyle = fs + 'px/' + fs + 'px monospace';
-          $('#main').css('font', mainStyle);
-        }
-        if ($.url('#')) {
-          var re = /(\D*)(\d+)$/;  // non-numeric\bnumeric
-          prefix = $.url('#').replace(re, "$1");
-          var start  = $.url('#').replace(re, "$2");
-          scrollToRegion($.url('#'), delay); 
-        }
-      });
-    </script>
     <style type="text/css">
       .hl  {background: #FFFBCC; color: #000000;}
       .hlo {background: #FFDAB9; color: #000000;}

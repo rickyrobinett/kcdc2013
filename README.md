@@ -46,10 +46,5 @@ The binary on Debian, Fedora, and Ubuntu can use POSIX capabilities to run on a 
     > sudo /sbin/setcap 'cap_net_bind_service=ep' ./kcdc2013
     > ./kcdc2013 >> kcdc2013.log &
 
-Notes:
 
-You can change the courier font size by passing in an fs= integer via the query string, e.g. /?fs=26
-
-You can target a specific story column via its id/anchor, e.g. /?fs=26#wingz_1, /?fs=18#carmack_1, etc.
-
-Thanks to Andrew Farmer and ku-fpg for scotty https://github.com/xich and all the great Haskell projects https://github.com/xich https://github.com/ku-fpg
+Thanks to the University of Kansas' Functional Programming Group (ku-fpg) http://www.ittc.ku.edu/csdl/fpg/ for scotty!
