@@ -75,9 +75,10 @@ sed $SPANEL   -e "41s!${ROW}!${COLUMBIATOKIRKS}!"                     > ${TMP_DI
 sed ${TMP_DIR}_columbia_to_kirks0 -e "47s!${ROW}!${COLUMBIATOJEFFC}!" > ${TMP_DIR}_columbia_to_kirks1
 sed ${TMP_DIR}_columbia_to_kirks1 -e "53s!${ROW}!${COLUMBIATOSTLOU}!" > ${TMP_DIR}_columbia_to_kirks
 
-sed $SPANEL   -e "60s!${ROW}!${KCTOCOLUMBIA}!"                        > ${TMP_DIR}_kc_to_columbia0
-sed ${TMP_DIR}_kc_to_columbia0    -e "65s!${ROW}!${KCTOJEFFC}!"       > ${TMP_DIR}_kc_to_columbia
-sed ${PANEL}  -e "437s!${ROW}!${KCTOKIRKS}!"                          > ${TMP_DIR}_kc_to_kirks
+sed $SPANEL   -e "60s!${ROW}!${KCTOKIRKS}!"                           > ${TMP_DIR}_kc_to_columbia0
+sed ${TMP_DIR}_kc_to_columbia0 -e "75s!${ROW}!${KCTOCOLUMBIA}!"       > ${TMP_DIR}_kc_to_columbia1
+sed ${TMP_DIR}_kc_to_columbia1  -e "85s!${ROW}!${KCTOJEFFC}!"         > ${TMP_DIR}_kc_to_columbia
+
 sed $SPANEL   -e "60s!${ROW}!${KCTOLAW}!"                             > ${TMP_DIR}_kc_to_law
 
 sed ${PANEL}  -e "71s!${ROW}!${KIRKSTOKC}!"                           > ${TMP_DIR}_kirks_to_kc
@@ -112,7 +113,6 @@ echo "";echo -n "  > Creating columns..."
 
 # BLANK 
 cat $PANEL                       \
-    $PANEL                       \
     $SPANEL                      \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}blank
@@ -121,70 +121,60 @@ cat $PANEL                       \
 
 #COLUMBIA TO KC
 cat ${TMP_DIR}_kirks_to_columbia \
-    $PANEL                       \
     ${TMP_DIR}_columbia_anchor   \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}columbia_to_kc
 
 #COLUMBIA TO KIRKS
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_columbia_to_kirks \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}columbia_to_kirks
 
 #JEFFERSON CITY TO COLUMBIA
 cat $PANEL                       \
-    $PANEL                       \
     $SPANEL                      \
     ${TMP_DIR}_jeffc_to_columbia \
     $PANEL                       > ${TMP_DIR}jeffc_to_columbia
 
 #KC TO COLUMBIA
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_kc_to_columbia    \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}kc_to_columbia
 
 #KC TO LAWRENCE
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_kc_to_law         \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}kc_to_law
 
 #KIRKS TO KC
 cat ${TMP_DIR}_kirks_anchor      \
-    $PANEL                       \
     $SPANEL                      \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}kirks_to_kc
 
 #LAWRENCE TO KC
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_law_to_kc         \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}law_to_kc
 
 #LAWRENCE TO MANHATTAN
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_law_to_manhat     \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}law_to_manhat
 
 #MANHATTAN TO LAWRENCE
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_manhat_to_law     \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}manhat_to_law
 
 #ST. LOUIS TO COLUMBIA
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_stlou_to_columbia \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}stlou_to_columbia
@@ -193,82 +183,71 @@ cat $PANEL                       \
 
 #BACHMAN
 cat ${TMP_DIR}_legend            \
-    $PANEL                       \
     ${TMP_DIR}_manhat_anchor     \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story10
 
 #BELL
 cat ${TMP_DIR}_story5            \
-    $PANEL                       \
     $SPANEL                      \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story5
 
 #CARMACK
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_story3            \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story3
 
 #DORSEY
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_stlouis_anchor    \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story9
 
 #KCS
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_kc_anchor         \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story1
 
 #GARMIN
 cat $PANEL                       \
-    ${TMP_DIR}_kc_to_kirks       \
     ${TMP_DIR}_story4            \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story4
 
 #KILBY
 cat $PANEL                       \
-    $PANEL                       \
     $SPANEL                      \
     ${TMP_DIR}_jeffc_anchor      \
     $PANEL                       > ${TMP_DIR}story11
 
 #MONTULLI
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_law_anchor        \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story7
 
 #WIENER
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_story6            \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story6
 
 #WILLIAMS
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_story8            \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story8
 
 #WINGZ
 cat $PANEL                       \
-    $PANEL                       \
     ${TMP_DIR}_story2            \
     $PANEL                       \
     $PANEL                       > ${TMP_DIR}story2
 
-paste -d "$DELIMITER" ${TMP_DIR}story10 ${TMP_DIR}manhat_to_law ${TMP_DIR}blank ${TMP_DIR}blank ${TMP_DIR}blank ${TMP_DIR}blank ${TMP_DIR}law_to_manhat ${TMP_DIR}story8 ${TMP_DIR}story7 ${TMP_DIR}law_to_kc ${TMP_DIR}blank ${TMP_DIR}kc_to_law ${TMP_DIR}story1 ${TMP_DIR}story2 ${TMP_DIR}story3 ${TMP_DIR}story4 ${TMP_DIR}kc_to_columbia ${TMP_DIR}blank ${TMP_DIR}kirks_to_kc ${TMP_DIR}story5 ${TMP_DIR}columbia_to_kc ${TMP_DIR}story6 ${TMP_DIR}columbia_to_kirks ${TMP_DIR}story11 ${TMP_DIR}jeffc_to_columbia ${TMP_DIR}blank ${TMP_DIR}blank ${TMP_DIR}stlou_to_columbia ${TMP_DIR}story9 > ${TMP_DIR}${NAME};
+paste -d "$DELIMITER" ${TMP_DIR}story10 ${TMP_DIR}manhat_to_law ${TMP_DIR}blank ${TMP_DIR}blank ${TMP_DIR}law_to_manhat ${TMP_DIR}story8 ${TMP_DIR}story7 ${TMP_DIR}law_to_kc ${TMP_DIR}blank ${TMP_DIR}kc_to_law ${TMP_DIR}story1 ${TMP_DIR}story2 ${TMP_DIR}story3 ${TMP_DIR}story4 ${TMP_DIR}kc_to_columbia ${TMP_DIR}blank ${TMP_DIR}kirks_to_kc ${TMP_DIR}story5 ${TMP_DIR}columbia_to_kc ${TMP_DIR}story6 ${TMP_DIR}columbia_to_kirks ${TMP_DIR}story11 ${TMP_DIR}jeffc_to_columbia ${TMP_DIR}blank ${TMP_DIR}stlou_to_columbia ${TMP_DIR}story9 > ${TMP_DIR}${NAME};
 echo "done.";echo -n "  > creating html file..."
 cat $HEADER ${TMP_DIR}${NAME} ${FOOTER} > ${NAME}.html
 echo "done."
